@@ -1,0 +1,76 @@
+/* Fonts for Tramita.co */
+
+/* Chivo Mono - Para navegación */
+@font-face {
+    font-family: 'Chivo Mono';
+    src: url('../fonts/chivo-mono/ChivoMono-Regular.woff2') format('woff2'),
+         url('../fonts/chivo-mono/ChivoMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chivo Mono';
+    src: url('../fonts/chivo-mono/ChivoMono-Bold.woff2') format('woff2'),
+         url('../fonts/chivo-mono/ChivoMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Unbounded - Para títulos */
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/unbounded/Unbounded-Regular.woff2') format('woff2'),
+         url('../fonts/unbounded/Unbounded-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/unbounded/Unbounded-Bold.woff2') format('woff2'),
+         url('../fonts/unbounded/Unbounded-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../fonts/unbounded/Unbounded-Light.woff2') format('woff2'),
+         url('../fonts/unbounded/Unbounded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Manrope - Para texto general */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/manrope/Manrope-Regular.woff2') format('woff2'),
+         url('../fonts/manrope/Manrope-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/manrope/Manrope-Medium.woff2') format('woff2'),
+         url('../fonts/manrope/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/manrope/Manrope-Bold.woff2') format('woff2'),
+         url('../fonts/manrope/Manrope-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
