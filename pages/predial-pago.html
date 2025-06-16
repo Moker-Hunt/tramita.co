@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía para pagar tu impuesto predial por internet en las principales ciudades de México: portales, métodos de pago y promociones.">
+    <title>Pago de predial en línea: principales ciudades | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Pago de predial en línea: principales ciudades</h1>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/impuestos-calculadora-1.webp" alt="Pago de predial en línea: principales ciudades" class="featured-image">
+    <div class="image-caption">Información visual sobre el proceso de pago del impuesto predial en línea</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Impuestos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/predial-pago.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/predial-pago.html&text=Pago%20de%20predial%20en%20l%C3%ADnea%3A%20principales%20ciudades" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Pago%20de%20predial%20en%20l%C3%ADnea%3A%20principales%20ciudades%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fpredial-pago.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía completa sobre cómo realizar el pago del impuesto predial en línea en las principales ciudades de México.</p>
+</div>
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué es el impuesto predial?</h2>
+                <p>El impuesto predial es una contribución que deben pagar los propietarios de bienes inmuebles (casas, departamentos, terrenos, etc.) a los gobiernos municipales o estatales. Este tributo es una de las principales fuentes de ingresos para los municipios y se utiliza para financiar servicios públicos como alumbrado, pavimentación, seguridad y mantenimiento de espacios comunes.</p>
+                
+                <p>El monto del predial varía según la ubicación, tamaño, uso y valor catastral del inmueble. Generalmente se debe pagar de forma anual, aunque algunas localidades permiten pagos bimestrales o trimestrales.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Ventajas de pagar el predial en línea</h2>
+                <ul>
+                    <li><strong>Ahorro de tiempo:</strong> Evitas traslados y filas en oficinas recaudadoras.</li>
+                    <li><strong>Disponibilidad 24/7:</strong> Puedes realizar el pago cualquier día y a cualquier hora.</li>
+                    <li><strong>Seguridad:</strong> Reduces el riesgo de llevar efectivo y obtienes comprobantes digitales.</li>
+                    <li><strong>Descuentos exclusivos:</strong> Muchas ciudades ofrecen promociones especiales para pagos en línea.</li>
+                    <li><strong>Facilidad de consulta:</strong> Puedes revisar tu historial de pagos desde tu computadora o dispositivo móvil.</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Ciudad de México (CDMX)</h2>
+                <p>La capital del país cuenta con uno de los sistemas de pago en línea más avanzados:</p>
+                
+                <h3>Portal de pago</h3>
+                <p>Visita el sitio oficial de la <a href="https://www.finanzas.cdmx.gob.mx" target="_blank">Secretaría de Administración y Finanzas</a> y busca la sección "Pago de Predial".</p>
+                
+                <h3>Requisitos</h3>
+                <ul>
+                    <li>Número de cuenta predial (aparece en boletas anteriores)</li>
+                    <li>Tarjeta de crédito/débito o datos para transferencia bancaria</li>
+                </ul>
+                
+                <h3>Descuentos</h3>
+                <p>La CDMX suele ofrecer descuentos de hasta el 8% por pago anual anticipado (enero) y 5% en febrero. Adultos mayores, pensionados y grupos vulnerables pueden acceder a reducciones de hasta el 30%.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Monterrey, Nuevo León</h2>
+                <h3>Portal de pago</h3>
+                <p>Ingresa al <a href="https://www.monterrey.gob.mx" target="_blank">portal del municipio de Monterrey</a> y busca la sección de "Pago de Predial en línea".</p>
+                
+                <h3>Requisitos</h3>
+                <ul>
+                    <li>Número de expediente catastral</li>
+                    <li>Método de pago electrónico</li>
+                </ul>
+                
+                <h3>Descuentos</h3>
+                <p>Generalmente ofrecen 15% de descuento por pago anticipado en enero, 10% en febrero y promociones especiales para jubilados y pensionados.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Guadalajara, Jalisco</h2>
+                <h3>Portal de pago</h3>
+                <p>Accede al <a href="https://enlinea.guadalajara.gob.mx" target="_blank">portal de servicios en línea</a> del Ayuntamiento de Guadalajara.</p>
+                
+                <h3>Requisitos</h3>
+                <ul>
+                    <li>Cuenta predial o dirección del inmueble</li>
+                    <li>Tarjeta bancaria o datos para transferencia</li>
+                </ul>
+                
+                <h3>Descuentos</h3>
+                <p>Descuentos del 15% en enero, 10% en febrero, y 5% en marzo para pagos anualizados. Descuentos adicionales para personas de la tercera edad, pensionados y personas con discapacidad.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Otras ciudades importantes</h2>
+                
+                <h3>Puebla</h3>
+                <p>Portal: <a href="https://www.pueblacapital.gob.mx" target="_blank">Ayuntamiento de Puebla</a><br>
+                Descuentos: 10-12% por pago anual anticipado</p>
+                
+                <h3>Querétaro</h3>
+                <p>Portal: <a href="https://www.municipiodequeretaro.gob.mx" target="_blank">Municipio de Querétaro</a><br>
+                Descuentos: Hasta 15% en enero y diferentes promociones durante el año</p>
+                
+                <h3>Mérida, Yucatán</h3>
+                <p>Portal: <a href="https://www.merida.gob.mx" target="_blank">Ayuntamiento de Mérida</a><br>
+                Descuentos: 20% por pago anual en enero, 10% en febrero y 8% en marzo</p>
+            </section>
+            
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué pasa si no pago mi predial a tiempo?</h3>
+                    <div class="faq-answer">
+                        <p>El retraso en el pago del predial genera recargos y multas que aumentan con el tiempo. En casos extremos, las autoridades pueden iniciar un procedimiento de cobro coactivo que podría resultar en el embargo del inmueble.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo pagar el predial de años anteriores en línea?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, la mayoría de los portales municipales permiten consultar y pagar adeudos de años anteriores. Sin embargo, estos pagos generalmente incluirán recargos y actualizaciones por inflación.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Se puede fraccionar el pago del predial?</h3>
+                    <div class="faq-answer">
+                        <p>Algunas ciudades ofrecen la posibilidad de pagar el predial en parcialidades (bimestral o trimestralmente). Sin embargo, generalmente los descuentos solo aplican para pagos anuales anticipados.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <a href="../index.html" class="back-to-home">Volver a inicio</a>
+        </div>
+    </div>
+    
+    <div class="disclaimer">
+        <p style="font-size: 0.9em; color: #777; margin-top: 1em;">
+            Este sitio es solo una guía informativa y <strong>no está afiliado a ninguna entidad gubernamental</strong>. No recopilamos datos personales ni realizamos trámites oficiales.
+        </p>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía para pagar tu impuesto predial por internet en las principales ciudades de México: portales, métodos de pago y promociones.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

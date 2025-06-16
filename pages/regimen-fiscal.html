@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparativa de los diferentes regímenes fiscales en México: requisitos, obligaciones, ventajas y desventajas de cada uno.">
+    <title>Regímenes fiscales en México y sus obligaciones | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Regímenes fiscales en México y sus obligaciones</h1>
+            <p>Guía detallada sobre los diferentes regímenes fiscales disponibles en México: características, obligaciones tributarias, beneficios y cómo elegir el adecuado para tu situación.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag impuestos">Impuestos</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    10 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Junio 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/impuestos-calendario-1.webp" alt="Regímenes fiscales en México y sus obligaciones" class="featured-image">
+    <div class="image-caption">Información visual sobre Regímenes fiscales en México y sus obligaciones</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Documentos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/regimen-fiscal.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/regimen-fiscal.html&text=Reg%C3%ADmenes%20fiscales%20en%20M%C3%A9xico%20y%20sus%20obligaciones" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Reg%C3%ADmenes%20fiscales%20en%20M%C3%A9xico%20y%20sus%20obligaciones%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fregimen-fiscal.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué son los regímenes fiscales?</h2>
+                <p>Los regímenes fiscales son las diferentes categorías en las que el SAT (Servicio de Administración Tributaria) clasifica a los contribuyentes según su actividad económica, nivel de ingresos y naturaleza jurídica. Cada régimen tiene sus propias reglas, obligaciones, tasas impositivas y beneficios fiscales.</p>
+                
+                <p>Es fundamental elegir correctamente el régimen fiscal que corresponda a tu situación, ya que esto determinará cómo cumplirás con tus obligaciones tributarias y qué beneficios podrás aprovechar.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Régimen Simplificado de Confianza (RESICO)</h2>
+                <p>Implementado a partir de 2022, este es uno de los regímenes más recientes y favorables para pequeños contribuyentes.</p>
+                
+                <h3>¿Quiénes pueden inscribirse?</h3>
+                <ul>
+                    <li>Personas físicas con ingresos anuales de hasta 3.5 millones de pesos</li>
+                    <li>Personas morales con ingresos anuales de hasta 35 millones de pesos</li>
+                </ul>
+                
+                <h3>Ventajas</h3>
+                <ul>
+                    <li>Tasas progresivas desde 1% hasta 2.5% para personas físicas</li>
+                    <li>Tasa fija del 30% para personas morales</li>
+                    <li>Simplificación de obligaciones fiscales</li>
+                    <li>No hay retención de IVA</li>
+                    <li>Declaraciones mensuales simplificadas</li>
+                </ul>
+                
+                <h3>Obligaciones</h3>
+                <ul>
+                    <li>Inscripción en el RFC</li>
+                    <li>Expedir facturas electrónicas (CFDI)</li>
+                    <li>Presentar declaraciones mensuales</li>
+                    <li>Declaración anual</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Régimen de Sueldos y Salarios</h2>
+                <p>Este régimen aplica para personas que perciben ingresos exclusivamente por salarios y conceptos asimilados.</p>
+                
+                <h3>¿Quiénes aplican?</h3>
+                <ul>
+                    <li>Empleados que trabajan para un patrón</li>
+                    <li>Pensionados</li>
+                    <li>Jubilados</li>
+                    <li>Personas con ingresos asimilados a salarios</li>
+                </ul>
+                
+                <h3>Obligaciones</h3>
+                <ul>
+                    <li>Inscripción en el RFC</li>
+                    <li>Presentar declaración anual (obligatorio solo si:</li>
+                    <ul>
+                        <li>Trabajas para dos o más patrones simultáneamente</li>
+                        <li>Tus ingresos anuales superan los 400,000 pesos</li>
+                        <li>Dejaste de trabajar antes de diciembre</li>
+                        <li>Recibes otros ingresos acumulables</li>
+                    </ul>
+                </ul>
+                
+                <h3>Ventajas</h3>
+                <ul>
+                    <li>El patrón realiza las retenciones de impuestos</li>
+                    <li>Derecho a deducciones personales en la declaración anual</li>
+                    <li>Posibilidad de solicitar devolución de saldo a favor</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Régimen de Actividades Empresariales y Profesionales</h2>
+                <p>Para personas físicas que realizan actividades comerciales, industriales, de transporte, agrícolas, ganaderas, silvícolas, pesqueras o prestan servicios profesionales independientes.</p>
+                
+                <h3>Obligaciones</h3>
+                <ul>
+                    <li>Inscripción en el RFC</li>
+                    <li>Llevar contabilidad electrónica</li>
+                    <li>Expedir CFDI por ingresos y gastos</li>
+                    <li>Presentar declaraciones mensuales definitivas</li>
+                    <li>Presentar declaración anual</li>
+                    <li>Pagos provisionales mensuales de ISR</li>
+                </ul>
+                
+                <h3>Tasas impositivas</h3>
+                <p>Se aplica tarifa progresiva anual del ISR que va desde el 1.92% hasta el 35% del ingreso, dependiendo del monto.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Régimen de Incorporación Fiscal (RIF)</h2>
+                <p>Este régimen está en proceso de desaparición, siendo reemplazado por el RESICO. Sin embargo, quienes ya estaban inscritos pueden permanecer hasta completar su periodo de 10 años.</p>
+                
+                <h3>Características</h3>
+                <ul>
+                    <li>Para contribuyentes con ingresos anuales hasta 2 millones de pesos</li>
+                    <li>Reducciones graduales de ISR durante 10 años</li>
+                    <li>Facilidades administrativas</li>
+                </ul>
+                
+                <h3>Obligaciones</h3>
+                <ul>
+                    <li>Declaraciones bimestrales</li>
+                    <li>Expedir facturas electrónicas</li>
+                    <li>Llevar registro de ingresos y gastos</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Régimen de Personas Morales</h2>
+                
+                <h3>Régimen General</h3>
+                <p>Aplica para sociedades mercantiles, asociaciones civiles con fines de lucro y otras personas morales.</p>
+                <ul>
+                    <li><strong>Tasa:</strong> 30% sobre la utilidad fiscal</li>
+                    <li><strong>Obligaciones:</strong> Contabilidad electrónica, declaraciones mensuales y anuales, CFDI, presentación de información sobre operaciones con terceros</li>
+                </ul>
+                
+                <h3>Personas Morales No Contribuyentes</h3>
+                <p>Asociaciones civiles sin fines de lucro, instituciones de beneficencia, etc.</p>
+                <ul>
+                    <li>Exentas del pago de ISR por sus actividades relacionadas con su objeto social</li>
+                    <li>Deben tributar por actividades no relacionadas con su objeto social</li>
+                </ul>
+                
+                <h3>Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras</h3>
+                <p>Para personas morales dedicadas exclusivamente a estas actividades.</p>
+                <ul>
+                    <li>Exención hasta cierto monto de ingresos</li>
+                    <li>Tasa reducida del 30% por el excedente</li>
+                </ul>
+            </section>
+            
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo cambiar de régimen fiscal?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, es posible cambiar de régimen fiscal si tu situación o actividades han cambiado. En la mayoría de los casos, este cambio puede realizarse a través del portal del SAT. Sin embargo, algunos cambios tienen restricciones o solo pueden hacerse en determinados periodos del año, generalmente al inicio del ejercicio fiscal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué ocurre si me inscribo en un régimen incorrecto?</h3>
+                    <div class="faq-answer">
+                        <p>Inscribirse en un régimen fiscal que no corresponde a tu actividad puede tener consecuencias como multas, recargos y actualización de impuestos. El SAT puede reclasificarte de oficio si detecta inconsistencias. Es recomendable regularizar tu situación lo antes posible.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿El RESICO es mejor que el RIF?</h3>
+                    <div class="faq-answer">
+                        <p>No existe una respuesta única, ya que depende de la situación particular de cada contribuyente. El RESICO ofrece tasas muy bajas pero elimina algunas deducciones que sí permitía el RIF. Para quienes ya estaban en el RIF y aprovechaban sus beneficios, podría convenir permanecer hasta agotar su periodo de 10 años. Para nuevos contribuyentes, el RESICO suele ser la opción más sencilla y con menor carga fiscal.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los regímenes fiscales, sus requisitos y obligaciones pueden cambiar según reformas fiscales y actualizaciones del SAT. Para información precisa y actualizada, consulta el sitio oficial del Servicio de Administración Tributaria o con un contador profesional.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="rfc.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-fiscal-1.webp" alt="RFC" loading="lazy">
+                            <h4>¿Qué es el RFC y cómo obtenerlo?</h4>
+                        </a>
+                        <a href="constancia-fiscal.html" class="related-article-card">
+                            <img src="../assets/img/articles/impuestos-formulario-1.webp" alt="Constancia fiscal" loading="lazy">
+                            <h4>Constancia Fiscal: Qué es y cómo obtenerla</h4>
+                        </a>
+                        <a href="sat-citas.html" class="related-article-card">
+                            <img src="../assets/img/articles/tramites-oficina-1.webp" alt="Citas SAT" loading="lazy">
+                            <h4>Cómo agendar citas en el SAT</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Comparativa de los diferentes regímenes fiscales en México: requisitos, obligaciones, ventajas y desventajas de cada uno.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

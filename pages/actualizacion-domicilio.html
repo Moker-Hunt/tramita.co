@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía completa sobre cómo actualizar tu domicilio en documentos oficiales: INE, RFC, CURP y otros trámites esenciales en México.">
+    <title>Actualización de Domicilio en Documentos Oficiales | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/tramites-documento-1.webp" alt="Actualización de Domicilio en Documentos Oficiales" class="featured-image">
+    <div class="image-caption">Información visual sobre Actualización de Domicilio en Documentos Oficiales</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Seguridad Social</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/actualizacion-domicilio.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/actualizacion-domicilio.html&text=Actualizaci%C3%B3n%20de%20Domicilio%20en%20Documentos%20Oficiales" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Actualizaci%C3%B3n%20de%20Domicilio%20en%20Documentos%20Oficiales%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Factualizacion-domicilio.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        <h1>Actualización de Domicilio en Documentos Oficiales</h1>
+        <p>Todo sobre cómo cambiar tu dirección en INE, SAT, IMSS y otros documentos importantes.</p>
+        
+        <div class="article-meta">
+            <span class="category-tag tramites">Trámites</span>
+            <span class="reading-time">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                7 min
+            </span>
+            <span class="last-update">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Actualizado: Mayo 2023
+            </span>
+        </div>
+    </div>
+    
+    <!-- Article Content -->
+    <div class="container">
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Por qué actualizar tu domicilio?</h2>
+                <p>Mantener actualizado tu domicilio en los documentos oficiales es fundamental por varias razones:</p>
+                
+                <ul>
+                    <li>Recibir notificaciones importantes de autoridades</li>
+                    <li>Facilitar trámites bancarios y financieros</li>
+                    <li>Evitar problemas legales por inconsistencias en datos</li>
+                    <li>Recibir servicios y correspondencia en tu ubicación actual</li>
+                    <li>Cumplir con obligaciones fiscales</li>
+                </ul>
+                
+                <p>Cuando cambias de residencia, es recomendable actualizar tu dirección en todos los documentos oficiales en un plazo no mayor a 30 días.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Actualización en INE/IFE</h2>
+                
+                <h3>Requisitos</h3>
+                <ul>
+                    <li>Credencial para votar actual (aunque esté vencida)</li>
+                    <li>Comprobante de domicilio con antigüedad no mayor a 3 meses (recibo de luz, agua, teléfono, estado de cuenta bancario)</li>
+                    <li>Identificación oficial alternativa (opcional)</li>
+                </ul>
+                
+                <h3>Proceso</h3>
+                <ol>
+                    <li>Agenda una cita en <a href="https://www.ine.mx" target="_blank">www.ine.mx</a> o llamando al INETEL (800 433 2000)</li>
+                    <li>Acude al módulo del INE en la fecha y hora programadas</li>
+                    <li>Presenta tus documentos y llena el formato de actualización</li>
+                    <li>Se tomarán tus datos biométricos (foto, huellas, firma)</li>
+                    <li>Recibe tu comprobante de trámite</li>
+                    <li>Recoge tu nueva credencial en aproximadamente 10-15 días hábiles</li>
+                </ol>
+                
+                <div class="note-box">
+                    <p><strong>Nota:</strong> El trámite es gratuito. Al entregar tu nueva credencial, la anterior será cancelada físicamente.</p>
+                </div>
+            </section>
+            
+            <section class="article-section">
+                <h2>Actualización en el RFC (SAT)</h2>
+                
+                <h3>Requisitos</h3>
+                <ul>
+                    <li>Identificación oficial vigente</li>
+                    <li>CURP</li>
+                    <li>Comprobante de domicilio reciente (no mayor a 3 meses)</li>
+                    <li>Formato de actualización R2 (generado en el portal del SAT)</li>
+                </ul>
+                
+                <h3>Proceso</h3>
+                <ol>
+                    <li><strong>En línea (recomendado):</strong>
+                        <ul>
+                            <li>Ingresa al portal del SAT con tu RFC y contraseña o e.firma</li>
+                            <li>Selecciona "Trámites del RFC" y luego "Actualización de domicilio fiscal"</li>
+                            <li>Completa el formulario con la nueva dirección</li>
+                            <li>Adjunta tu comprobante de domicilio digitalizado</li>
+                            <li>Envía la solicitud y guarda tu acuse</li>
+                        </ul>
+                    </li>
+                    <li><strong>Presencial:</strong>
+                        <ul>
+                            <li>Agenda cita en el portal del SAT</li>
+                            <li>Acude a la oficina del SAT con tus documentos</li>
+                            <li>Presenta el formato R2 impreso</li>
+                            <li>Obtén tu acuse de actualización</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="article-section">
+                <h2>Actualización de domicilio en CURP</h2>
+                
+                <p>La CURP no incluye información de domicilio, por lo que no se requiere actualización por cambio de residencia. Sin embargo, si has cambiado de entidad federativa y tu CURP fue asignada antes de 2012, podrías necesitar actualizar algunos datos en el Registro Nacional de Población.</p>
+                
+                <p>Para cualquier modificación en la CURP:</p>
+                <ul>
+                    <li>Visita <a href="https://www.gob.mx/curp/" target="_blank">www.gob.mx/curp/</a></li>
+                    <li>Si necesitas corregir datos sustanciales, acude al Registro Civil de tu localidad</li>
+                </ul>
+            </section>
+
+            <section class="article-section">
+                <h2>Actualización en otros documentos importantes</h2>
+                
+                <h3>Licencia de conducir</h3>
+                <p>Varía según la entidad federativa, pero generalmente requiere:</p>
+                <ul>
+                    <li>Licencia anterior</li>
+                    <li>Identificación oficial</li>
+                    <li>Comprobante de domicilio</li>
+                    <li>Pago de derechos</li>
+                    <li>Acudir a la oficina de tránsito o secretaría de movilidad correspondiente</li>
+                </ul>
+                
+                <h3>Pasaporte</h3>
+                <p>La actualización de domicilio solo se realiza al renovar el pasaporte. No es posible modificar la dirección en un pasaporte vigente.</p>
+                
+                <h3>IMSS</h3>
+                <p>Si eres derechohabiente:</p>
+                <ul>
+                    <li>Acude a la Unidad de Medicina Familiar que te corresponda</li>
+                    <li>Presenta identificación y comprobante de domicilio</li>
+                    <li>Solicita el cambio en el área de Vigencia de Derechos</li>
+                </ul>
+                
+                <h3>Registros bancarios</h3>
+                <p>Cada institución tiene su propio proceso, pero generalmente puedes actualizar tu domicilio:</p>
+                <ul>
+                    <li>A través de la banca en línea</li>
+                    <li>En sucursal con identificación y comprobante de domicilio</li>
+                    <li>Mediante app móvil (en algunos bancos)</li>
+                </ul>
+            </section>
+
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre actualización de domicilio</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué documentos son aceptados como comprobante de domicilio?</h3>
+                    <div class="faq-answer">
+                        <p>Los documentos más comúnmente aceptados como comprobante de domicilio son:</p>
+                        <ul>
+                            <li>Recibo de luz (CFE)</li>
+                            <li>Recibo de agua</li>
+                            <li>Recibo de teléfono fijo (no celular)</li>
+                            <li>Estado de cuenta bancario</li>
+                            <li>Predial o contrato de arrendamiento notariado</li>
+                            <li>Estado de cuenta de servicios de internet o televisión de paga</li>
+                        </ul>
+                        <p>Generalmente, estos documentos deben tener una antigüedad no mayor a 3 meses y estar a tu nombre. Si no están a tu nombre, algunas instituciones aceptan una carta de quien aparece en el comprobante, junto con copia de su identificación.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo usar un mismo comprobante de domicilio para todos los trámites?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, siempre que cumpla con los siguientes criterios:</p>
+                        <ul>
+                            <li>Sea un documento original (no fotocopias)</li>
+                            <li>Tenga antigüedad menor a 3 meses</li>
+                            <li>Muestre la dirección completa y legible</li>
+                            <li>No presente alteraciones o tachaduras</li>
+                        </ul>
+                        <p>Recomendación: Saca varias copias del mismo comprobante para distintos trámites, pero siempre lleva el original para cotejar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué pasa si no actualizo mi domicilio en documentos oficiales?</h3>
+                    <div class="faq-answer">
+                        <p>No actualizar tu domicilio puede tener consecuencias como:</p>
+                        <ul>
+                            <li>Multas por no recibir notificaciones fiscales del SAT</li>
+                            <li>No poder realizar ciertos trámites bancarios o financieros</li>
+                            <li>Dificultad para recibir correspondencia importante</li>
+                            <li>Problemas para ejercer derechos electorales en tu nueva localidad</li>
+                            <li>Retrasos en procesos legales que requieran notificación personal</li>
+                        </ul>
+                        <p>En el caso específico del SAT, mantener un domicilio fiscal incorrecto puede ser motivo de sanciones económicas, ya que es obligación del contribuyente mantener actualizada esta información.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los requisitos y procesos pueden variar según la dependencia gubernamental. Para información más precisa, consulta directamente con las entidades oficiales correspondientes.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="ine-consulta.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-firma-1.webp" alt="Consulta tu módulo INE" loading="lazy">
+                            <h4>¿Cómo consultar y encontrar tu módulo INE más cercano?</h4>
+                        </a>
+                        <a href="acta-nacimiento.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-tramites-1.webp" alt="Acta de nacimiento" loading="lazy">
+                            <h4>¿Cómo obtener una copia de tu acta de nacimiento en línea?</h4>
+                        </a>
+                        <a href="curp.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-identidad-2.webp" alt="CURP" loading="lazy">
+                            <h4>Cómo obtener, reimprimir o corregir tu CURP</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía completa sobre cómo actualizar tu domicilio en documentos oficiales: INE, RFC, CURP y otros trámites esenciales en México.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

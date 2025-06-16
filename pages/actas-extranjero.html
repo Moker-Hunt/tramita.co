@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía completa sobre cómo obtener actas de nacimiento mexicanas para personas nacidas en el extranjero. Requisitos, proceso y documentación necesaria.">
+    <title>Actas de nacimiento para mexicanos nacidos en el extranjero | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Actas de nacimiento para mexicanos nacidos en el extranjero</h1>
+            <p>Guía completa para obtener el acta de nacimiento mexicana siendo nacido en otro país.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag documentos">Documentos</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    6 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Mayo 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/documentos-internacional-1.webp" alt="Actas de nacimiento para mexicanos nacidos en el extranjero" class="featured-image">
+    <div class="image-caption">Información visual sobre Actas de nacimiento para mexicanos nacidos en el extranjero</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Documentos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/actas-extranjero.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/actas-extranjero.html&text=Actas%20de%20nacimiento%20para%20mexicanos%20nacidos%20en%20el%20extranjero" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Actas%20de%20nacimiento%20para%20mexicanos%20nacidos%20en%20el%20extranjero%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Factas-extranjero.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué es una inscripción de nacimiento en el extranjero?</h2>
+                <p>La inscripción de nacimiento en el extranjero es el proceso mediante el cual los hijos de padres mexicanos que nacieron fuera de México pueden registrarse como ciudadanos mexicanos. Este trámite permite obtener un acta de nacimiento mexicana, lo que garantiza el reconocimiento de la nacionalidad mexicana y el acceso a todos los derechos que esta conlleva.</p>
+                
+                <p>Este proceso es fundamental para:</p>
+                <ul>
+                    <li>Obtener la doble nacionalidad</li>
+                    <li>Tramitar documentos de identidad mexicanos (CURP, INE, pasaporte)</li>
+                    <li>Acceder a servicios públicos en México</li>
+                    <li>Heredar propiedades en territorio mexicano</li>
+                    <li>Estudiar o trabajar en México sin restricciones migratorias</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>¿Quiénes pueden solicitar este trámite?</h2>
+                <p>Tienen derecho a solicitar un acta de nacimiento mexicana las siguientes personas nacidas en el extranjero:</p>
+                
+                <ul>
+                    <li>Hijos de padre o madre mexicanos (al menos uno de los padres debe ser mexicano)</li>
+                    <li>Hijos de padres extranjeros naturalizados mexicanos antes del nacimiento del menor</li>
+                    <li>Personas que hayan nacido a bordo de embarcaciones o aeronaves mexicanas</li>
+                </ul>
+                
+                <p>De acuerdo con el principio de <em>jus sanguinis</em> (derecho de sangre), México reconoce como ciudadanos a los hijos de mexicanos independientemente del lugar donde hayan nacido.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>¿Dónde se puede realizar este trámite?</h2>
+                <p>El registro de nacimiento de mexicanos en el extranjero puede realizarse en:</p>
+                
+                <h3>1. Consulados mexicanos en el extranjero</h3>
+                <p>La opción más común si la persona aún reside fuera de México:</p>
+                <ul>
+                    <li>Consulado o Embajada de México en el país donde reside la persona</li>
+                    <li>No es necesario que sea el mismo país donde nació la persona</li>
+                </ul>
+                
+                <h3>2. En México (para personas que ya se encuentran en territorio nacional)</h3>
+                <ul>
+                    <li>Oficinas del Registro Civil en cualquier estado de la República</li>
+                    <li>Oficinas centrales de la Secretaría de Relaciones Exteriores (SRE)</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Requisitos para la inscripción de nacimiento en el extranjero</h2>
+                
+                <h3>Documentos básicos</h3>
+                <ul>
+                    <li>Acta de nacimiento original extranjera (apostillada o legalizada)</li>
+                    <li>Traducción oficial al español (si el acta está en otro idioma)</li>
+                    <li>Acta de nacimiento mexicana del padre o madre mexicanos</li>
+                    <li>Identificación oficial con fotografía del padre o madre mexicanos (pasaporte, INE)</li>
+                    <li>Comprobante del pago de derechos correspondiente</li>
+                </ul>
+                
+                <h3>Documentos adicionales que pueden solicitarse</h3>
+                <ul>
+                    <li>Comprobante de domicilio</li>
+                    <li>Acta de matrimonio de los padres (en algunos casos)</li>
+                    <li>Pasaporte vigente de ambos padres</li>
+                    <li>CURP del padre o madre mexicanos (si la tienen)</li>
+                </ul>
+                
+                <p>El costo del trámite varía según el lugar donde se realice. En consulados, el precio oscila entre $30 y $50 USD, mientras que en México el costo aproximado es de $500 a $800 MXN.</p>
+            </section>
+
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre actas de nacimiento en el extranjero</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué es la apostilla o legalización del acta extranjera?</h3>
+                    <div class="faq-answer">
+                        <p>La apostilla o legalización es un proceso que certifica la autenticidad de un documento oficial para que sea válido en otro país:</p>
+                        <ul>
+                            <li><strong>Apostilla:</strong> Se utiliza para países que forman parte de la Convención de La Haya. Es un sello o certificación especial que se coloca en el documento original.</li>
+                            <li><strong>Legalización:</strong> Para países que no forman parte de la Convención de La Haya. Implica la certificación por parte del Ministerio de Relaciones Exteriores del país emisor y luego la validación por el consulado mexicano.</li>
+                        </ul>
+                        <p>Sin este requisito, el acta extranjera no será aceptada para el registro en México.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Se puede realizar el trámite si solo uno de los padres es mexicano?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, basta con que uno de los padres sea mexicano por nacimiento o naturalización para que el hijo nacido en el extranjero tenga derecho a la nacionalidad mexicana. Sin embargo, es importante considerar que:</p>
+                        <ul>
+                            <li>El padre o madre mexicano debe estar presente durante el trámite</li>
+                            <li>Se debe presentar documentación que acredite la nacionalidad mexicana del padre o madre</li>
+                            <li>Si el padre mexicano no aparece en el acta de nacimiento extranjera, podría requerirse un proceso adicional de reconocimiento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Hay un límite de edad para realizar este trámite?</h3>
+                    <div class="faq-answer">
+                        <p>No, no existe un límite de edad para realizar la inscripción de nacimiento en el extranjero. Cualquier persona que cumpla con los requisitos puede registrarse como mexicano independientemente de su edad. Sin embargo, el proceso varía ligeramente:</p>
+                        <ul>
+                            <li>Para menores de edad: El trámite lo realizan los padres o tutores legales</li>
+                            <li>Para mayores de edad: La persona puede realizar el trámite por sí misma</li>
+                        </ul>
+                        <p>Es recomendable realizar este trámite lo antes posible, ya que facilitará muchos otros trámites en México.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Una vez obtenida el acta mexicana, ¿cómo obtengo la CURP?</h3>
+                    <div class="faq-answer">
+                        <p>Después de obtener el acta de nacimiento mexicana:</p>
+                        <ol>
+                            <li>En los consulados: Normalmente la CURP se genera automáticamente con la inscripción y se entrega junto con el acta</li>
+                            <li>En México: Puedes solicitar la CURP en línea a través del portal de RENAPO o acudiendo a módulos de CURP en oficinas gubernamentales</li>
+                        </ol>
+                        <p>La CURP es esencial para realizar casi cualquier trámite oficial en México, desde la obtención de la INE hasta la inscripción escolar.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los requisitos y procesos pueden variar según las actualizaciones de la Secretaría de Relaciones Exteriores y los consulados mexicanos. Para información más precisa, consulta directamente con el consulado mexicano más cercano.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="acta-nacimiento.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-tramites-1.webp" alt="Acta de nacimiento" loading="lazy">
+                            <h4>Acta de nacimiento en México: trámites y requisitos</h4>
+                        </a>
+                        <a href="nacionalidad-mexicana.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-tramites-3.webp" alt="Nacionalidad mexicana" loading="lazy">
+                            <h4>Cómo obtener la nacionalidad mexicana</h4>
+                        </a>
+                        <a href="pasaporte-mexicano.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-archivo-2.webp" alt="Pasaporte mexicano" loading="lazy">
+                            <h4>Requisitos para el pasaporte mexicano</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía completa sobre cómo obtener actas de nacimiento mexicanas para personas nacidas en el extranjero. Requisitos, proceso y documentación necesaria.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

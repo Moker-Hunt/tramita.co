@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toda la información sobre la licencia permanente de conducir en México: requisitos, costos, trámite y estados donde está disponible esta modalidad.">
+    <title>Licencia permanente de conducir: Estados donde se tramita | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Licencia permanente de conducir en México</h1>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/vehiculos-licencia-2.webp" alt="Licencia permanente de conducir en México" class="featured-image">
+    <div class="image-caption">Información visual sobre la licencia permanente de conducir en México</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Vehículos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/licencia-permanente.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/licencia-permanente.html&text=Licencia%20permanente%20de%20conducir%20en%20M%C3%A9xico" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Licencia%20permanente%20de%20conducir%20en%20M%C3%A9xico%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Flicencia-permanente.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Información completa sobre la licencia permanente de conducir en México: estados donde está disponible, requisitos y costos.</p>
+</div>
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué es la licencia permanente?</h2>
+                <p>La licencia permanente de conducir es un documento oficial que, a diferencia de las licencias con vigencia temporal, no requiere renovaciones periódicas. Como su nombre lo indica, tiene una validez permanente o de muy largo plazo (algunas tienen validez de 30 años o más).</p>
+                
+                <p>Es importante señalar que aunque se denominan "permanentes", estas licencias:</p>
+                <ul>
+                    <li>No están disponibles en todos los estados de la República Mexicana</li>
+                    <li>Pueden tener restricciones o requisitos especiales</li>
+                    <li>En algunos casos, pueden ser canceladas por infracciones graves</li>
+                    <li>Pueden requerir actualizaciones de fotografía cada cierto tiempo</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Estados donde se puede tramitar la licencia permanente</h2>
+                
+                <p>Actualmente, son pocos los estados que ofrecen la modalidad de licencia permanente:</p>
+                
+                <h3>Ciudad de México (CDMX)</h3>
+                <p>La licencia tipo A permanente en CDMX es una de las más conocidas. Se expide para conductores particulares y tiene validez vitalicia, aunque se recomienda actualizar la fotografía cada 15 años.</p>
+                
+                <h3>Estado de México</h3>
+                <p>Ofrece la licencia permanente para conductores particulares. El costo es significativamente mayor que la licencia temporal, pero evita trámites de renovación.</p>
+                
+                <h3>Morelos</h3>
+                <p>Tiene disponible la licencia permanente para conductores particulares, con requisitos similares a los de otros estados.</p>
+                
+                <h3>Puebla</h3>
+                <p>Ofrece licencia permanente para automovilistas particulares (tipo A).</p>
+                
+                <h3>Otros estados</h3>
+                <p>Estados como Tabasco y Michoacán han ofrecido esta modalidad en diferentes momentos, pero la disponibilidad puede cambiar debido a actualizaciones en las normativas locales.</p>
+                
+                <div class="note-box">
+                    <p><strong>Nota importante:</strong> La disponibilidad de licencias permanentes puede cambiar por decisiones gubernamentales. Siempre verifica la información más reciente en los sitios oficiales de las Secretarías de Movilidad o Transporte del estado correspondiente.</p>
+                </div>
+            </section>
+            
+            <section class="article-section">
+                <h2>Requisitos generales para obtener una licencia permanente</h2>
+                
+                <p>Aunque los requisitos específicos varían según el estado, generalmente se solicita:</p>
+                
+                <ul>
+                    <li><strong>Identificación oficial:</strong> INE, pasaporte o cédula profesional</li>
+                    <li><strong>Comprobante de domicilio:</strong> No mayor a 3 meses de antigüedad</li>
+                    <li><strong>CURP:</strong> Impresión reciente</li>
+                    <li><strong>Licencia anterior:</strong> Si se trata de un cambio de temporal a permanente</li>
+                    <li><strong>Pago de derechos:</strong> Generalmente entre $3,000 y $7,000 MXN (varía por estado)</li>
+                    <li><strong>Examen médico:</strong> En algunos estados se requiere certificado de aptitud física</li>
+                    <li><strong>Examen de conocimientos viales:</strong> En caso de ser primera licencia</li>
+                </ul>
+                
+                <p>Para conductores de primera vez, algunos estados requieren primero obtener una licencia temporal antes de poder solicitar la permanente.</p>
+            </section>
+
+            <section class="article-section">
+                <h2>Ventajas y desventajas</h2>
+                
+                <h3>Ventajas</h3>
+                <ul>
+                    <li>Eliminación de trámites recurrentes de renovación</li>
+                    <li>Ahorro a largo plazo comparado con el costo acumulado de renovaciones</li>
+                    <li>Evita problemas por conducir con licencia vencida</li>
+                    <li>Documento válido para identificación oficial por largo tiempo</li>
+                </ul>
+                
+                <h3>Desventajas</h3>
+                <ul>
+                    <li>Costo inicial elevado</li>
+                    <li>Fotografía desactualizada con el paso de los años</li>
+                    <li>Posibles cambios en la normativa que requieran actualización</li>
+                    <li>No disponible en todos los estados</li>
+                </ul>
+            </section>
+
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre licencias permanentes</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿La licencia permanente es válida en todo el país?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, las licencias de conducir emitidas por cualquier entidad federativa son válidas en todo el territorio nacional, incluyendo las permanentes. Están amparadas por acuerdos entre estados que reconocen mutuamente la validez de estos documentos.</p>
+                        
+                        <p>Sin embargo, al viajar al extranjero, es recomendable verificar si se requiere una licencia internacional según el país que se visitará.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué sucede si cambio de domicilio a otro estado?</h3>
+                    <div class="faq-answer">
+                        <p>Si te mudas a otro estado, no es obligatorio cambiar tu licencia permanente. Puedes seguir utilizándola mientras sea válida. Sin embargo, si el nuevo estado de residencia requiere que sus habitantes tengan licencia local, deberás tramitar una nueva según las reglas de ese estado.</p>
+                        
+                        <p>En caso de requerir un nuevo documento, algunos estados ofrecen descuentos o procedimientos simplificados para canjear una licencia permanente de otro estado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo perder mi licencia permanente?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, aunque la licencia sea permanente, puede ser cancelada o suspendida por las autoridades en los siguientes casos:</p>
+                        <ul>
+                            <li>Acumulación de infracciones graves</li>
+                            <li>Conducir bajo influencia del alcohol o drogas</li>
+                            <li>Participación en accidentes con lesiones graves o fallecidos</li>
+                            <li>Uso fraudulento o alteración del documento</li>
+                        </ul>
+                        <p>Las condiciones específicas para cancelación varían según la legislación de cada estado.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <a href="../index.html" class="back-to-home">Volver a inicio</a>
+        </div>
+    </div>
+    
+    <div class="disclaimer">
+        <p style="font-size: 0.9em; color: #777; margin-top: 1em;">
+            Este sitio es solo una guía informativa y <strong>no está afiliado a ninguna entidad gubernamental</strong>. No recopilamos datos personales ni realizamos trámites oficiales.
+        </p>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Toda la información sobre la licencia permanente de conducir en México: requisitos, costos, trámite y estados donde está disponible esta modalidad.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

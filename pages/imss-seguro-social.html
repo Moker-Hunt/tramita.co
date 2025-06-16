@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo sobre el IMSS y el seguro social en México: registro, servicios, prestaciones, números de seguridad social y atención médica para trabajadores y derechohabientes.">
+    <title>IMSS y Seguro Social en México | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>IMSS y Seguro Social en México</h1>
+            <p>Todo sobre servicios, prestaciones y trámites del Instituto Mexicano del Seguro Social</p>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/salud-hospital-1.webp" alt="IMSS y Seguro Social en México" class="featured-image">
+    <div class="image-caption">Información visual sobre el Instituto Mexicano del Seguro Social</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Servicios Sociales</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/imss-seguro-social.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/imss-seguro-social.html&text=IMSS%20y%20Seguro%20Social%20en%20M%C3%A9xico" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=IMSS%20y%20Seguro%20Social%20en%20M%C3%A9xico%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fimss-seguro-social.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía completa sobre el Instituto Mexicano del Seguro Social (IMSS), sus servicios, régimenes de afiliación y trámites principales.</p>
+</div>
+        <div class="article-content">
+            <p>El Instituto Mexicano del Seguro Social (IMSS) es la institución de salud pública más grande de América Latina y proporciona servicios médicos, pensiones y prestaciones sociales a trabajadores asalariados y sus familias en México. Este artículo explica los principales aspectos, servicios y trámites relacionados con el IMSS.</p>
+            
+            <h2>¿Qué es el IMSS?</h2>
+            <p>El IMSS es un organismo público descentralizado fundado en 1943 que administra el sistema de seguridad social para los trabajadores del sector privado en México. Su misión es proteger el bienestar de los trabajadores y sus familias a través de seguros que cubren riesgos de salud, invalidez, vejez y muerte.</p>
+            
+            <h2>Número de Seguridad Social (NSS)</h2>
+            <p>El Número de Seguridad Social (NSS) es un identificador único de 11 dígitos asignado a cada persona afiliada al IMSS. Es necesario para realizar cualquier trámite en el instituto y tiene carácter permanente, es decir, se mantiene durante toda la vida del asegurado.</p>
+            
+            <h3>¿Cómo obtener o recuperar tu NSS?</h3>
+            <p>Existen varias maneras de obtener o recuperar tu NSS:</p>
+            <ul>
+                <li><strong>En línea:</strong> A través del <a href="https://www.imss.gob.mx">portal oficial del IMSS</a></li>
+                <li><strong>App IMSS Digital:</strong> Disponible para dispositivos iOS y Android</li>
+                <li><strong>Presencial:</strong> En cualquier subdelegación del IMSS</li>
+                <li><strong>Teléfono:</strong> Llamando al 800-623-2323</li>
+            </ul>
+            
+            <h2>Régimenes de afiliación</h2>
+            <p>El IMSS tiene diferentes regímenes de afiliación:</p>
+            <ul>
+                <li><strong>Régimen Obligatorio:</strong> Para trabajadores asalariados</li>
+                <li><strong>Régimen Voluntario:</strong> Para trabajadores independientes, personas que trabajen por cuenta propia, etc.</li>
+                <li><strong>Seguro Facultativo:</strong> Para estudiantes, trabajadores no asalariados y otros grupos</li>
+                <li><strong>IMSS-Bienestar:</strong> Para personas sin seguridad social en zonas marginadas</li>
+            </ul>
+            
+            <h2>Servicios y prestaciones</h2>
+            <p>El IMSS ofrece cinco seguros básicos para los derechohabientes:</p>
+            
+            <h3>1. Seguro de Enfermedades y Maternidad</h3>
+            <p>Proporciona atención médica, quirúrgica, farmacéutica y hospitalaria para el asegurado y sus beneficiarios. En caso de maternidad, incluye atención durante el embarazo, parto y puerperio, así como incapacidad con goce de sueldo.</p>
+            
+            <h3>2. Seguro de Riesgos de Trabajo</h3>
+            <p>Protege al trabajador contra accidentes y enfermedades a los que está expuesto en el ejercicio de su trabajo, incluyendo atención médica, rehabilitación y pensiones en caso de incapacidad permanente o muerte.</p>
+            
+            <h3>3. Seguro de Invalidez y Vida</h3>
+            <p>Otorga pensiones a asegurados que sufren una enfermedad o accidente no laboral que les impide trabajar, así como pensiones para familiares en caso de fallecimiento del asegurado.</p>
+            
+            <h3>4. Seguro de Retiro, Cesantía en Edad Avanzada y Vejez</h3>
+            <p>Brinda protección financiera al trabajador cuando, por edad avanzada, no puede seguir laborando. Incluye pensiones de retiro, cesantía y vejez.</p>
+            
+            <h3>5. Guardería y Prestaciones Sociales</h3>
+            <p>Ofrece servicios de guardería para hijos de aseguradas y de asegurados viudos o divorciados con custodia, así como actividades culturales, deportivas y de capacitación para trabajadores y sus familias.</p>
+            
+            <h2>Trámites principales</h2>
+            <p>Entre los trámites más comunes en el IMSS se encuentran:</p>
+            
+            <h3>Alta como trabajador</h3>
+            <p>Este trámite lo realiza el empleador cuando contrata a un trabajador. Debe registrarlo en los cinco días hábiles siguientes al inicio de la relación laboral. El empleado puede verificar si está dado de alta a través del portal del IMSS o la app IMSS Digital.</p>
+            
+            <h3>Registro de beneficiarios</h3>
+            <p>El trabajador asegurado puede registrar como beneficiarios a:</p>
+            <ul>
+                <li>Esposa/o o concubina/o</li>
+                <li>Hijos menores de 16 años</li>
+                <li>Hijos entre 16 y 25 años que estudien en planteles del sistema educativo nacional</li>
+                <li>Padres que dependan económicamente del asegurado</li>
+            </ul>
+            
+            <h3>Solicitud de incapacidad</h3>
+            <p>Las incapacidades pueden ser:</p>
+            <ul>
+                <li><strong>Temporal:</strong> Cuando el asegurado está temporalmente imposibilitado para trabajar</li>
+                <li><strong>Permanente parcial:</strong> Cuando disminuye la capacidad para trabajar</li>
+                <li><strong>Permanente total:</strong> Cuando se pierde absolutamente la capacidad para desempeñar cualquier trabajo</li>
+            </ul>
+            
+            <h3>Solicitud de pensión</h3>
+            <p>Existen diversos tipos de pensiones que pueden solicitarse según corresponda:</p>
+            <ul>
+                <li>Pensión por vejez (al cumplir 65 años)</li>
+                <li>Pensión por cesantía (entre 60 y 64 años)</li>
+                <li>Pensión por invalidez</li>
+                <li>Pensión por viudez</li>
+                <li>Pensión por orfandad</li>
+            </ul>
+            
+            <h2>Herramientas digitales del IMSS</h2>
+            <p>El IMSS ha desarrollado diversas herramientas para facilitar los trámites:</p>
+            <ul>
+                <li><strong>Portal web:</strong> <a href="https://www.imss.gob.mx">www.imss.gob.mx</a></li>
+                <li><strong>App IMSS Digital:</strong> Disponible en App Store y Google Play</li>
+                <li><strong>IMSS Ordinario:</strong> Chat en línea para consultas</li>
+                <li><strong>Centro de contacto:</strong> 800-623-2323</li>
+            </ul>
+            
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>¿Qué pasa con mi seguro social si me quedo sin empleo?</h3>
+                    <div class="faq-answer">
+                        <p>Al quedar desempleado, conservas el derecho a recibir atención médica por un periodo de hasta 8 semanas después de la baja laboral. Para prestaciones en especie (atención médica, hospitalaria, etc.), la conservación de derechos puede extenderse según las semanas cotizadas previamente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Los extranjeros pueden afiliarse al IMSS?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, los extranjeros que trabajen legalmente en México con permisos vigentes pueden ser afiliados al IMSS por sus empleadores, con los mismos derechos y obligaciones que los trabajadores mexicanos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Cómo puedo cambiar de clínica del IMSS?</h3>
+                    <div class="faq-answer">
+                        <p>El cambio de clínica puede realizarse a través del portal del IMSS, la app IMSS Digital o presencialmente en la Unidad de Medicina Familiar (UMF) que te corresponda según tu domicilio. Necesitarás tu NSS, CURP e identificación oficial.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Para información actualizada y precisa sobre trámites específicos, consulta el portal oficial del IMSS o acude a una subdelegación. Los requisitos y procedimientos pueden cambiar sin previo aviso.</p>
+            </div>
+            
+            <a href="../index.html" class="back-to-home">Volver a inicio</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Todo sobre el IMSS y el seguro social en México: registro, servicios, prestaciones, números de seguridad social y atención médica para trabajadores y derechohabientes.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

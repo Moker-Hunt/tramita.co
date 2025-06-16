@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información completa sobre la nacionalidad mexicana: obtención por nacimiento, naturalización, doble nacionalidad y trámites relacionados con la ciudadanía mexicana.">
+    <title>Nacionalidad Mexicana: Tipos y Trámites | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Nacionalidad Mexicana</h1>
+            <p>Tipos, vías de obtención y trámites relacionados para adquirir la nacionalidad mexicana por nacimiento o naturalización.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag tramites">Trámites</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    8 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Mayo 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/documentos-tramites-3.webp" alt="Nacionalidad Mexicana: Tipos y Trámites" class="featured-image">
+    <div class="image-caption">Información visual sobre Nacionalidad Mexicana: Tipos y Trámites</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Documentos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/nacionalidad-mexicana.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/nacionalidad-mexicana.html&text=Nacionalidad%20Mexicana%3A%20Tipos%20y%20Tr%C3%A1mites" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Nacionalidad%20Mexicana%3A%20Tipos%20y%20Tr%C3%A1mites%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fnacionalidad-mexicana.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <p>La nacionalidad mexicana es el vínculo jurídico que une a una persona con el Estado Mexicano y le confiere derechos y obligaciones específicas. La Constitución Política de los Estados Unidos Mexicanos establece en sus artículos 30, 32 y 37 las disposiciones fundamentales sobre la nacionalidad mexicana.</p>
+            
+            <h2>Tipos de nacionalidad mexicana</h2>
+            <p>De acuerdo con la legislación mexicana, existen dos formas de adquirir la nacionalidad mexicana:</p>
+            
+            <h3>1. Nacionalidad por nacimiento</h3>
+            <p>Son mexicanos por nacimiento:</p>
+            <ul>
+                <li>Los nacidos en territorio de la República Mexicana, independientemente de la nacionalidad de sus padres (principio de jus soli).</li>
+                <li>Los nacidos en el extranjero, hijos de padre o madre mexicanos nacidos en territorio nacional, o naturalizados mexicanos (principio de jus sanguinis).</li>
+                <li>Los nacidos a bordo de embarcaciones o aeronaves mexicanas, sean de guerra o mercantes.</li>
+            </ul>
+            
+            <h3>2. Nacionalidad por naturalización</h3>
+            <p>Son mexicanos por naturalización:</p>
+            <ul>
+                <li>Los extranjeros que obtengan carta de naturalización por parte de la Secretaría de Relaciones Exteriores (SRE).</li>
+                <li>La mujer o el varón extranjeros que contraigan matrimonio con varón o mujer mexicanos, que tengan o establezcan su domicilio dentro del territorio nacional y cumplan con los demás requisitos que al efecto señale la ley.</li>
+            </ul>
+            
+            <h2>Doble nacionalidad</h2>
+            <p>Desde 1998, México reconoce la doble nacionalidad para mexicanos por nacimiento. Esto significa que un mexicano por nacimiento puede adquirir otra nacionalidad sin perder la mexicana. Sin embargo, los mexicanos por naturalización que adquieran otra nacionalidad podrían perder la mexicana.</p>
+            <p>Beneficios de la doble nacionalidad:</p>
+            <ul>
+                <li>Posibilidad de vivir y trabajar en dos países.</li>
+                <li>Acceso a servicios públicos en ambos países.</li>
+                <li>Participación política en México (derecho a votar).</li>
+                <li>Facilidad para adquirir propiedades en México sin restricciones fronterizas o costeras.</li>
+            </ul>
+            
+            <h2>Trámites de nacionalidad mexicana</h2>
+            
+            <h3>Declaratoria de nacionalidad mexicana por nacimiento</h3>
+            <p>Este trámite es para personas nacidas en el extranjero, hijos de padre o madre mexicanos, que necesitan acreditar su nacionalidad mexicana.</p>
+            
+            <h4>Requisitos generales:</h4>
+            <ul>
+                <li>Solicitud debidamente llenada.</li>
+                <li>Acta de nacimiento del interesado, apostillada o legalizada.</li>
+                <li>Acta de nacimiento mexicana del padre o madre.</li>
+                <li>Identificación oficial con fotografía del interesado.</li>
+                <li>Pago de derechos correspondiente.</li>
+            </ul>
+            
+            <h3>Carta de naturalización</h3>
+            <p>Este documento acredita el otorgamiento de la nacionalidad mexicana a un extranjero. Los requisitos y tiempo de residencia varían según el caso:</p>
+            
+            <h4>Residencia general:</h4>
+            <p>Cinco años de residencia legal previa en el país.</p>
+            
+            <h4>Residencia privilegiada:</h4>
+            <p>Dos años de residencia legal para:</p>
+            <ul>
+                <li>Descendientes en línea recta de mexicanos.</li>
+                <li>Personas con hijos mexicanos por nacimiento.</li>
+                <li>Originarios de países latinoamericanos o de la península ibérica.</li>
+                <li>Personas con méritos especiales en campos como ciencia, arte, deporte, etc.</li>
+            </ul>
+            
+            <h4>Requisitos generales para naturalizarse:</h4>
+            <ul>
+                <li>Solicitud debidamente llenada.</li>
+                <li>Tarjeta de residente temporal o permanente vigente.</li>
+                <li>Acta de nacimiento apostillada o legalizada.</li>
+                <li>Pasaporte vigente.</li>
+                <li>Constancia de conocimientos sobre historia, cultura y español de México (examen).</li>
+                <li>Carta de no antecedentes penales.</li>
+                <li>Comprobante de pago de derechos.</li>
+            </ul>
+            
+            <h3>Recuperación de la nacionalidad mexicana</h3>
+            <p>Las personas que perdieron su nacionalidad mexicana antes de la reforma constitucional de 1998 pueden recuperarla mediante un trámite específico ante la SRE o en consulados mexicanos.</p>
+            
+            <h2>Beneficios de la nacionalidad mexicana</h2>
+            <ul>
+                <li>Derecho a vivir y trabajar permanentemente en México sin restricciones.</li>
+                <li>Acceso a servicios públicos como salud y educación.</li>
+                <li>Derechos políticos plenos (votar y ser votado).</li>
+                <li>Protección consular en el extranjero.</li>
+                <li>Facilidad para adquirir propiedades en zonas restringidas para extranjeros.</li>
+                <li>Transmisión de la nacionalidad mexicana a hijos nacidos en el extranjero.</li>
+            </ul>
+            
+            <h2>¿Dónde realizar los trámites?</h2>
+            <p>Los trámites relacionados con la nacionalidad mexicana se realizan en:</p>
+            <ul>
+                <li><strong>En México:</strong> Oficinas de la Secretaría de Relaciones Exteriores (SRE) y sus delegaciones.</li>
+                <li><strong>En el extranjero:</strong> Consulados y embajadas de México.</li>
+            </ul>
+            
+            <h2>Costos</h2>
+            <p>Los costos varían según el tipo de trámite y se actualizan periódicamente. Es importante consultar las tarifas vigentes en el portal oficial de la SRE.</p>
+            
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>¿Puedo perder mi nacionalidad mexicana por nacimiento?</h3>
+                    <div class="faq-answer">
+                        <p>No, la nacionalidad mexicana por nacimiento es irrevocable. Ningún mexicano por nacimiento puede ser privado de su nacionalidad bajo ninguna circunstancia, incluso si adquiere otras nacionalidades.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Qué derechos tienen los mexicanos por naturalización?</h3>
+                    <div class="faq-answer">
+                        <p>Los mexicanos por naturalización tienen casi los mismos derechos que los mexicanos por nacimiento, con algunas excepciones constitucionales, como no poder ocupar ciertos cargos públicos reservados exclusivamente para mexicanos por nacimiento (como Presidente, Secretarios de Estado, entre otros).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Mi hijo nacido en el extranjero puede ser mexicano?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, los hijos de padre o madre mexicanos nacidos en el extranjero son mexicanos por nacimiento. Sin embargo, deben realizar el trámite de Declaratoria de Nacionalidad Mexicana por Nacimiento para obtener la documentación que acredite su nacionalidad.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los requisitos, procedimientos y costos pueden cambiar. Para información precisa y actualizada, consulta el sitio oficial de la Secretaría de Relaciones Exteriores o acude a sus oficinas.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="curp.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-identidad-2.webp" alt="CURP" loading="lazy">
+                            <h4>CURP: Clave Única de Registro de Población</h4>
+                        </a>
+                        <a href="apostilla-documentos.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-archivo-1.webp" alt="Apostilla de documentos" loading="lazy">
+                            <h4>Apostilla de Documentos</h4>
+                        </a>
+                        <a href="rfc.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-fiscal-1.webp" alt="RFC" loading="lazy">
+                            <h4>RFC: Registro Federal de Contribuyentes</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Información completa sobre la nacionalidad mexicana: obtención por nacimiento, naturalización, doble nacionalidad y trámites relacionados con la ciudadanía mexicana.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

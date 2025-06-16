@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo lo que necesitas saber sobre el Sistema de Pagos Electrónicos Interbancarios (SPEI) en México: cómo funcionan las transferencias, horarios, comisiones y consejos de seguridad.">
+    <title>Transferencias SPEI: guía completa | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Transferencias SPEI: guía completa</h1>
+            <p>Todo lo que necesitas saber sobre cómo funcionan las transferencias SPEI, horarios, comisiones, límites y soluciones a los problemas más comunes.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag finanzas">Finanzas</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    8 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Junio 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/finanzas-digital-2.webp" alt="Transferencias SPEI: guía completa" class="featured-image">
+    <div class="image-caption">Información visual sobre Transferencias SPEI: guía completa</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Documentos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/spei-transferencias.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/spei-transferencias.html&text=Transferencias%20SPEI%3A%20gu%C3%ADa%20completa" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Transferencias%20SPEI%3A%20gu%C3%ADa%20completa%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fspei-transferencias.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué es el SPEI?</h2>
+                <p>El Sistema de Pagos Electrónicos Interbancarios (SPEI) es una infraestructura de pagos desarrollada y operada por el Banco de México (Banxico) que permite a los usuarios transferir dinero electrónicamente entre cuentas de distintas instituciones financieras en México de forma casi inmediata.</p>
+                <p>SPEI funciona como la columna vertebral del sistema financiero mexicano, permitiendo transferencias interbancarias en tiempo real con disponibilidad 24/7, los 365 días del año, contribuyendo significativamente a la digitalización de los pagos en el país.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>¿Cómo funcionan las transferencias SPEI?</h2>
+                <p>El proceso de una transferencia SPEI se desarrolla de la siguiente manera:</p>
+                
+                <h3>1. Iniciación de la transferencia</h3>
+                <p>El ordenante (quien envía el dinero) accede a su banca en línea o aplicación móvil y selecciona la opción para realizar una transferencia SPEI, proporcionando:</p>
+                <ul>
+                    <li>Banco destino</li>
+                    <li>CLABE interbancaria (18 dígitos), número de tarjeta o número de celular del beneficiario</li>
+                    <li>Nombre del beneficiario</li>
+                    <li>Monto a transferir</li>
+                    <li>Concepto de pago (opcional pero recomendado)</li>
+                    <li>Referencia numérica (opcional)</li>
+                </ul>
+                
+                <h3>2. Procesamiento</h3>
+                <p>Una vez confirmada la instrucción y autenticado el usuario:</p>
+                <ol>
+                    <li>El banco del ordenante valida que haya fondos suficientes</li>
+                    <li>Envía la instrucción de pago al SPEI</li>
+                    <li>SPEI procesa la instrucción y la envía al banco receptor</li>
+                    <li>El banco receptor acredita los fondos a la cuenta del beneficiario</li>
+                </ol>
+                
+                <h3>3. Confirmación</h3>
+                <p>Al finalizar la operación:</p>
+                <ul>
+                    <li>El ordenante recibe una confirmación con el número de rastreo o folio SPEI</li>
+                    <li>El beneficiario recibe una notificación del depósito en su cuenta</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Horarios de operación del SPEI</h2>
+                <p>Actualmente, SPEI opera las 24 horas del día, los 7 días de la semana, incluyendo días festivos. Sin embargo, es importante tener en cuenta que:</p>
+                <ul>
+                    <li>Las transferencias enviadas entre las 06:00 y 17:30 horas en días hábiles suelen procesarse en cuestión de segundos o minutos</li>
+                    <li>Las transferencias realizadas fuera de ese horario, en fines de semana o días festivos podrían tomar más tiempo, aunque la mayoría de los bancos ya procesan operaciones en tiempo real incluso en estos periodos</li>
+                    <li>Cada institución financiera puede tener sus propias políticas y horarios para transferencias SPEI, por lo que es recomendable verificar directamente con tu banco</li>
+                </ul>
+                <p>Banxico continúa trabajando con las instituciones financieras para mejorar los tiempos de procesamiento en horarios extendidos y días no laborables.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Costos de las transferencias SPEI</h2>
+                <p>Los costos asociados a las transferencias SPEI son determinados por cada institución financiera:</p>
+                <ul>
+                    <li>Muchos bancos ofrecen transferencias SPEI gratuitas a través de sus plataformas digitales</li>
+                    <li>Algunos bancos pueden cobrar comisiones por transferencias superiores a ciertos montos</li>
+                    <li>Las transferencias realizadas en sucursales físicas suelen tener un costo mayor que las realizadas por canales digitales</li>
+                    <li>Generalmente, recibir transferencias SPEI es gratuito</li>
+                </ul>
+                <p>Es recomendable consultar con tu institución financiera las comisiones específicas aplicables a tu cuenta.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Medidas de seguridad en transferencias SPEI</h2>
+                <p>Para garantizar la seguridad de tus transferencias SPEI:</p>
+                <ul>
+                    <li>Verifica siempre la CLABE o número de cuenta del beneficiario antes de confirmar la operación</li>
+                    <li>Utiliza contraseñas fuertes y factores de autenticación adicionales cuando estén disponibles</li>
+                    <li>No compartas tus credenciales bancarias con terceros</li>
+                    <li>Realiza tus operaciones desde redes seguras, evitando WiFi públicos</li>
+                    <li>Guarda siempre el comprobante con el número de rastreo SPEI</li>
+                    <li>Verifica regularmente tus estados de cuenta para detectar movimientos no reconocidos</li>
+                    <li>Actualiza tus datos de contacto con tu banco para recibir alertas sobre movimientos</li>
+                </ul>
+            </section>
+            
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre transferencias SPEI</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cuál es el límite de monto para transferencias SPEI?</h3>
+                    <div class="faq-answer">
+                        <p>No existe un límite establecido por Banxico para las transferencias SPEI. Sin embargo, cada institución financiera puede establecer sus propios límites diarios o por operación. Estos límites suelen variar según:</p>
+                        <ul>
+                            <li>El tipo de cuenta que tengas</li>
+                            <li>El canal que utilices (app, banca en línea, sucursal)</li>
+                            <li>Tu historial como cliente</li>
+                        </ul>
+                        <p>Para montos muy elevados, algunas instituciones pueden solicitar confirmaciones adicionales o requerir que la operación se realice en una sucursal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué hago si mi transferencia SPEI no llega al destinatario?</h3>
+                    <div class="faq-answer">
+                        <p>Si tu transferencia SPEI no se refleja en la cuenta del beneficiario:</p>
+                        <ol>
+                            <li>Verifica el número de rastreo o folio SPEI en tu comprobante</li>
+                            <li>Confirma que los datos del beneficiario sean correctos</li>
+                            <li>Contacta al servicio al cliente de tu institución financiera proporcionando el folio SPEI</li>
+                            <li>La institución podrá rastrear la operación y determinar su estado</li>
+                            <li>En caso de error, se puede solicitar la devolución de los fondos, aunque este proceso puede tomar varios días hábiles</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo cancelar una transferencia SPEI una vez enviada?</h3>
+                    <div class="faq-answer">
+                        <p>No. Una vez que una transferencia SPEI ha sido procesada y enviada, no puede ser cancelada debido a la naturaleza del sistema en tiempo real. Por eso es crucial verificar todos los datos antes de confirmar la operación.</p>
+                        <p>Si enviaste dinero a una cuenta incorrecta, debes:</p>
+                        <ol>
+                            <li>Contactar inmediatamente a tu banco</li>
+                            <li>Proporcionar el folio SPEI y explicar la situación</li>
+                            <li>El banco puede iniciar un proceso de aclaración, aunque la recuperación de los fondos no está garantizada y dependerá de la cooperación del titular de la cuenta receptora</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los procesos, comisiones y horarios de las transferencias SPEI pueden variar según la institución financiera y cambios normativos del Banco de México. Para información oficial y actualizada, consulta directamente con tu institución financiera o en el sitio web de Banxico.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="prestamos-personales.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-dinero-1.webp" alt="Prestamos personales" loading="lazy">
+                            <h4>Préstamos personales: comparativa y requisitos</h4>
+                        </a>
+                        <a href="reclamaciones-bancarias.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-banco-1.webp" alt="Reclamaciones bancarias" loading="lazy">
+                            <h4>Reclamaciones bancarias en México</h4>
+                        </a>
+                        <a href="billeteras-digitales.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-digital-3.webp" alt="Billeteras digitales" loading="lazy">
+                            <h4>Billeteras digitales: opciones y seguridad</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Todo lo que necesitas saber sobre el Sistema de Pagos Electrónicos Interbancarios (SPEI) en México: cómo funcionan las transferencias, horarios, comisiones y consejos de seguridad.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

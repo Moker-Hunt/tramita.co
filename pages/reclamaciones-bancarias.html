@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía para realizar reclamaciones bancarias en México: procedimientos, plazos, instancias y recomendaciones para resolver problemas con instituciones financieras.">
+    <title>Reclamaciones Bancarias en México | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Reclamaciones Bancarias en México</h1>
+            <p>Guía completa para presentar reclamaciones ante instituciones bancarias y la CONDUSEF: procedimientos, plazos y consejos prácticos.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag finanzas">Finanzas</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    7 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Junio 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/finanzas-banco-1.webp" alt="Reclamaciones Bancarias en México" class="featured-image">
+    <div class="image-caption">Información visual sobre Reclamaciones Bancarias en México</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Documentos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/reclamaciones-bancarias.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/reclamaciones-bancarias.html&text=Reclamaciones%20Bancarias%20en%20M%C3%A9xico" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Reclamaciones%20Bancarias%20en%20M%C3%A9xico%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Freclamaciones-bancarias.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Cuándo presentar una reclamación bancaria?</h2>
+                <p>Las reclamaciones bancarias pueden presentarse en diversas situaciones, incluyendo:</p>
+                
+                <ul>
+                    <li>Cargos no reconocidos en tarjetas</li>
+                    <li>Retiros no autorizados</li>
+                    <li>Transferencias erróneas o no aplicadas</li>
+                    <li>Depósitos no reflejados en cuenta</li>
+                    <li>Cobros indebidos de comisiones</li>
+                    <li>Problemas con cajeros automáticos</li>
+                    <li>Incumplimiento de condiciones pactadas</li>
+                    <li>Errores en estados de cuenta</li>
+                </ul>
+                
+                <p>Es importante iniciar el proceso de reclamación lo antes posible, ya que existen plazos específicos para cada tipo de reclamo.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Proceso de reclamación: pasos a seguir</h2>
+                
+                <h3>1. Instancia interna (UNE)</h3>
+                <p>El primer paso es contactar directamente con tu banco a través de sus canales oficiales:</p>
+                <ul>
+                    <li>Sucursal bancaria</li>
+                    <li>Centro de atención telefónica</li>
+                    <li>Unidad Especializada de Atención a Usuarios (UNE)</li>
+                    <li>Banca en línea o aplicación móvil (algunos bancos)</li>
+                </ul>
+                
+                <p>Para este paso necesitarás:</p>
+                <ul>
+                    <li>Identificación oficial</li>
+                    <li>Estados de cuenta o comprobantes relacionados</li>
+                    <li>Número de tarjeta o cuenta</li>
+                    <li>Detalles específicos de la transacción reclamada</li>
+                </ul>
+                
+                <p>El banco debe proporcionar un número de folio o acuse de recibo de tu reclamación.</p>
+                
+                <h3>2. CONDUSEF</h3>
+                <p>Si no recibes respuesta del banco en un plazo de 45 días, o si la respuesta es insatisfactoria, puedes acudir a la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF).</p>
+                
+                <p>Este proceso implica:</p>
+                <ol>
+                    <li>Presentar la queja en línea, por teléfono o presencialmente</li>
+                    <li>Proporcionar documentación completa</li>
+                    <li>Participar en audiencias de conciliación</li>
+                </ol>
+            </section>
+            
+            <section class="article-section">
+                <h2>Plazos importantes</h2>
+                
+                <div class="info-table">
+                    <div class="info-row">
+                        <div class="info-cell"><strong>Tipo de reclamación</strong></div>
+                        <div class="info-cell"><strong>Plazo para presentarla</strong></div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-cell">Cargos no reconocidos en tarjeta</div>
+                        <div class="info-cell">90 días naturales desde la fecha de corte</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-cell">Transferencias no reconocidas</div>
+                        <div class="info-cell">90 días naturales desde la operación</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-cell">Cargos recurrentes</div>
+                        <div class="info-cell">90 días naturales desde la fecha de cargo</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-cell">Tiempo de respuesta del banco</div>
+                        <div class="info-cell">45 días naturales</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-cell">Plazo para acudir a CONDUSEF</div>
+                        <div class="info-cell">1 año desde el hecho o desde la respuesta del banco</div>
+                    </div>
+                </div>
+                
+                <div class="note-box">
+                    <p><strong>Importante:</strong> Estos plazos pueden variar según el tipo específico de producto financiero y la institución. Verifica los términos y condiciones de tu contrato.</p>
+                </div>
+            </section>
+
+            <section class="article-section">
+                <h2>Documentación necesaria</h2>
+                
+                <p>Para hacer más efectiva tu reclamación, reúne la siguiente documentación:</p>
+                
+                <ul>
+                    <li><strong>Identificación oficial vigente:</strong> INE, pasaporte, cédula profesional</li>
+                    <li><strong>Contrato del producto o servicio:</strong> Copia del contrato de apertura</li>
+                    <li><strong>Estados de cuenta:</strong> De los últimos 3-6 meses</li>
+                    <li><strong>Comprobantes:</strong> Vouchers, recibos o capturas de pantalla</li>
+                    <li><strong>Comunicaciones previas:</strong> Correos o mensajes intercambiados con el banco</li>
+                    <li><strong>Número de folio:</strong> De reclamaciones previas (si existen)</li>
+                </ul>
+                
+                <p>Mantén un registro ordenado de todas las comunicaciones, incluyendo fechas, nombres de representantes y números de folio.</p>
+            </section>
+
+            <section class="article-section">
+                <h2>Casos especiales de reclamación</h2>
+                
+                <h3>Fraude cibernético</h3>
+                <p>Si fuiste víctima de fraude en línea:</p>
+                <ul>
+                    <li>Reporta inmediatamente a tu banco (muchos tienen líneas especiales 24/7)</li>
+                    <li>Bloquea tus cuentas y tarjetas</li>
+                    <li>Cambia tus contraseñas de banca en línea</li>
+                    <li>Presenta una denuncia ante el Ministerio Público</li>
+                    <li>Guarda capturas de pantalla y evidencia digital</li>
+                </ul>
+                
+                <h3>Cargos automáticos y domiciliaciones</h3>
+                <p>Para cancelar cargos recurrentes:</p>
+                <ul>
+                    <li>Notifica por escrito al banco y al proveedor del servicio</li>
+                    <li>La cancelación debe ser efectiva a más tardar en 3 días hábiles</li>
+                    <li>Conserva el acuse de cancelación</li>
+                </ul>
+            </section>
+
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre reclamaciones bancarias</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿El banco puede cobrarme por presentar una reclamación?</h3>
+                    <div class="faq-answer">
+                        <p>No. Las instituciones financieras no pueden cobrar por recibir, procesar o resolver reclamaciones. Si te solicitan algún pago por este concepto, debes denunciarlo ante CONDUSEF.</p>
+                        
+                        <p>Sin embargo, si se determina que tu reclamación es improcedente y el banco demuestra que actuaste con dolo o mala fe, podrían aplicarse cargos por gestiones administrativas, siempre y cuando estén especificados en tu contrato.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué pasa si no estoy conforme con la resolución de CONDUSEF?</h3>
+                    <div class="faq-answer">
+                        <p>Si no estás satisfecho con la resolución de CONDUSEF, tienes las siguientes opciones:</p>
+                        <ul>
+                            <li><strong>Solicitar un dictamen técnico:</strong> Documento con validez jurídica que puede utilizarse como prueba en un juicio</li>
+                            <li><strong>Procedimiento de arbitraje:</strong> Si ambas partes están de acuerdo, CONDUSEF puede actuar como árbitro</li>
+                            <li><strong>Acción colectiva:</strong> Para casos que afectan a múltiples usuarios</li>
+                            <li><strong>Juicio civil:</strong> Presentar una demanda ante tribunales civiles</li>
+                        </ul>
+                        <p>Para montos menores a 50,000 UDIS (aproximadamente $350,000 MXN), el dictamen técnico de CONDUSEF puede ser ejecutivo, facilitando la recuperación del dinero.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cuánto tiempo tarda en resolverse una reclamación bancaria?</h3>
+                    <div class="faq-answer">
+                        <p>Los tiempos de resolución varían según:</p>
+                        <ul>
+                            <li><strong>Reclamación directa al banco:</strong> Hasta 45 días naturales</li>
+                            <li><strong>Proceso de conciliación en CONDUSEF:</strong> 60-90 días hábiles</li>
+                            <li><strong>Procedimiento de arbitraje:</strong> 3-6 meses</li>
+                        </ul>
+                        <p>Para cargos no reconocidos en tarjetas de débito, el banco debe abonar el monto reclamado en un máximo de 4 días hábiles mientras realiza la investigación. Para tarjetas de crédito, el plazo es de hasta 20 días hábiles.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los requisitos, procedimientos y plazos para presentar reclamaciones bancarias pueden variar según la institución y los cambios normativos de la CONDUSEF. Para información más precisa, consulta directamente con tu institución financiera o la CONDUSEF.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="billeteras-digitales.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-digital-3.webp" alt="Billeteras digitales" loading="lazy">
+                            <h4>Billeteras digitales: opciones y seguridad</h4>
+                        </a>
+                        <a href="spei-transferencias.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-digital-2.webp" alt="SPEI Transferencias" loading="lazy">
+                            <h4>Transferencias SPEI: todo lo que debes saber</h4>
+                        </a>
+                        <a href="prestamos-personales.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-dinero-1.webp" alt="Prestamos personales" loading="lazy">
+                            <h4>Préstamos personales: comparativa y requisitos</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía para realizar reclamaciones bancarias en México: procedimientos, plazos, instancias y recomendaciones para resolver problemas con instituciones financieras.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

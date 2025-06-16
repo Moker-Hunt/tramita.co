@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía completa sobre billeteras digitales en México: opciones disponibles, beneficios, seguridad y cómo elegir la mejor para tus necesidades financieras.">
+    <title>Billeteras digitales en México: Opciones y beneficios | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Billeteras digitales en México: Opciones y beneficios</h1>
+            <p>Guía completa sobre las principales billeteras electrónicas disponibles en México, sus ventajas, comisiones y consejos de seguridad para usarlas correctamente.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag finanzas">Finanzas</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    9 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Julio 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/finanzas-digital-3.webp" alt="Billeteras digitales en México: Opciones y beneficios" class="featured-image">
+    <div class="image-caption">Información visual sobre Billeteras digitales en México: Opciones y beneficios</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Finanzas</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/billeteras-digitales.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/billeteras-digitales.html&text=Billeteras%20digitales%20en%20M%C3%A9xico%3A%20Opciones%20y%20beneficios" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Billeteras%20digitales%20en%20M%C3%A9xico%3A%20Opciones%20y%20beneficios%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fbilleteras-digitales.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué son las billeteras digitales?</h2>
+                <p>Las billeteras digitales (o e-wallets) son aplicaciones o plataformas que permiten almacenar dinero electrónicamente y realizar diversas transacciones financieras desde dispositivos móviles o computadoras. Estas herramientas han revolucionado la forma en que los mexicanos manejan su dinero, ofreciendo alternativas más convenientes, seguras y accesibles que los métodos tradicionales.</p>
+                
+                <p>Las billeteras digitales permiten realizar diversas operaciones:</p>
+                <ul>
+                    <li>Enviar y recibir dinero entre personas</li>
+                    <li>Pagar servicios (luz, agua, telefonía)</li>
+                    <li>Recargar tiempo aire para celulares</li>
+                    <li>Pagar en comercios físicos y en línea</li>
+                    <li>Almacenar información de tarjetas bancarias</li>
+                    <li>En algunos casos, generar tarjetas virtuales para compras</li>
+                    <li>Ahorrar e incluso invertir pequeñas cantidades</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Principales billeteras digitales disponibles en México</h2>
+                
+                <h3>1. Billeteras de instituciones financieras tradicionales</h3>
+                <p>Desarrolladas por bancos y grandes instituciones financieras:</p>
+                <ul>
+                    <li><strong>BBVA Wallet:</strong> Permite vincular tarjetas BBVA para pagos móviles y generar tarjetas virtuales</li>
+                    <li><strong>Bancomer Pay:</strong> Facilita transferencias entre usuarios y pagos sin necesidad de datos bancarios</li>
+                    <li><strong>CoDi:</strong> Plataforma de cobro digital desarrollada por el Banco de México para transferencias inmediatas</li>
+                    <li><strong>Citibanamex Pay:</strong> Permite pagos móviles y transferencias entre usuarios</li>
+                </ul>
+                
+                <h3>2. Billeteras independientes</h3>
+                <p>Desarrolladas por empresas tecnológicas o fintech:</p>
+                <ul>
+                    <li><strong>Mercado Pago:</strong> Una de las más populares, permite pagar, cobrar, invertir y ofrece tarjeta física</li>
+                    <li><strong>PayPal:</strong> Plataforma internacional para compras online y transferencias</li>
+                    <li><strong>Payit:</strong> Solución mexicana para transferencias y pagos móviles</li>
+                    <li><strong>Sr. Pago:</strong> Enfocada en pequeños comercios, permite cobrar con tarjetas</li>
+                </ul>
+                
+                <h3>3. Billeteras de grandes empresas tecnológicas</h3>
+                <ul>
+                    <li><strong>Google Pay:</strong> Integrada con el ecosistema de Google, permite pagos en línea y físicos</li>
+                    <li><strong>Apple Pay:</strong> Para usuarios de dispositivos Apple, ofrece alta seguridad biométrica</li>
+                    <li><strong>Samsung Pay:</strong> Compatible con terminales de pago tradicionales</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Beneficios de usar billeteras digitales</h2>
+                
+                <h3>Conveniencia y accesibilidad</h3>
+                <ul>
+                    <li>Disponibilidad 24/7 para transacciones</li>
+                    <li>No requieren visitas a sucursales bancarias</li>
+                    <li>Interfaces intuitivas de fácil uso</li>
+                    <li>Acceso a servicios financieros sin necesidad de cuenta bancaria tradicional</li>
+                </ul>
+                
+                <h3>Seguridad</h3>
+                <ul>
+                    <li>Autenticación biométrica (huella dactilar, reconocimiento facial)</li>
+                    <li>Generación de contraseñas dinámicas para cada operación</li>
+                    <li>Cifrado de datos y monitoreo constante</li>
+                    <li>Notificaciones instantáneas de movimientos</li>
+                </ul>
+                
+                <h3>Inclusión financiera</h3>
+                <p>Las billeteras digitales han permitido que millones de mexicanos sin acceso a servicios bancarios tradicionales puedan:</p>
+                <ul>
+                    <li>Realizar pagos electrónicos sin necesidad de tarjeta bancaria</li>
+                    <li>Recibir remesas o pagos laborales sin comisiones elevadas</li>
+                    <li>Construir historial financiero</li>
+                    <li>Acceder a microcréditos y otros servicios financieros básicos</li>
+                </ul>
+            </section>
+
+            <section class="article-section">
+                <h2>Consideraciones de seguridad</h2>
+                <p>Aunque las billeteras digitales ofrecen altos niveles de seguridad, es importante tomar precauciones:</p>
+                
+                <ul>
+                    <li>Utilizar contraseñas seguras y diferentes para cada servicio</li>
+                    <li>Activar la autenticación de dos factores cuando esté disponible</li>
+                    <li>Mantener el software del dispositivo y las aplicaciones actualizadas</li>
+                    <li>Descargar aplicaciones únicamente de tiendas oficiales</li>
+                    <li>No compartir códigos de verificación ni contraseñas</li>
+                    <li>Revisar periódicamente los movimientos y estados de cuenta</li>
+                    <li>Desconfiar de correos o mensajes que soliciten datos personales</li>
+                </ul>
+            </section>
+            
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre billeteras digitales</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Las billeteras digitales son seguras para usar en México?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, las billeteras digitales autorizadas en México operan bajo rigurosas medidas de seguridad y están reguladas por las autoridades financieras. La mayoría implementa:</p>
+                        <ul>
+                            <li>Encriptación de datos</li>
+                            <li>Autenticación biométrica</li>
+                            <li>Monitoreo constante contra fraudes</li>
+                            <li>Sistemas de alertas en tiempo real</li>
+                        </ul>
+                        <p>Sin embargo, es fundamental utilizar contraseñas seguras y mantener actualizada la aplicación para maximizar la protección.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Necesito tener cuenta bancaria para usar una billetera digital?</h3>
+                    <div class="faq-answer">
+                        <p>No necesariamente. Existen dos tipos principales de billeteras digitales:</p>
+                        <ul>
+                            <li><strong>Vinculadas a bancos:</strong> Requieren una cuenta bancaria preexistente (como las apps de BBVA o Citibanamex)</li>
+                            <li><strong>Independientes:</strong> Muchas billeteras como Mercado Pago permiten crear una cuenta, depositar efectivo en puntos autorizados y operar sin necesidad de una cuenta bancaria tradicional</li>
+                        </ul>
+                        <p>Las opciones independientes han sido fundamentales para la inclusión financiera en México.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cuál es la mejor billetera digital para usar en México?</h3>
+                    <div class="faq-answer">
+                        <p>La "mejor" billetera digital depende de tus necesidades específicas:</p>
+                        <ul>
+                            <li><strong>Para usuarios bancarizados:</strong> Las apps propias de tu banco suelen ofrecer mayor integración con tus cuentas existentes</li>
+                            <li><strong>Para no bancarizados:</strong> Mercado Pago, Payit o Sr. Pago ofrecen soluciones completas sin requerir cuenta bancaria</li>
+                            <li><strong>Para compras internacionales:</strong> PayPal tiene mayor aceptación global</li>
+                            <li><strong>Para pequeños comercios:</strong> Sr. Pago o Clip ofrecen soluciones integrales de cobro</li>
+                        </ul>
+                        <p>Evalúa factores como comisiones, límites de transacción, facilidad de uso y disponibilidad de servicios adicionales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Tienen algún costo las transferencias con billeteras digitales?</h3>
+                    <div class="faq-answer">
+                        <p>Las políticas de comisiones varían según la plataforma:</p>
+                        <ul>
+                            <li>Transferencias entre usuarios de la misma billetera: Generalmente gratuitas</li>
+                            <li>Transferencias a cuentas bancarias: Pueden tener comisiones según monto y destino</li>
+                            <li>Retiros en efectivo: Suelen tener comisiones variables</li>
+                            <li>Pagos en comercios: Generalmente gratuitos para el usuario (el comercio paga comisión)</li>
+                        </ul>
+                        <p>Es recomendable revisar la estructura de comisiones de cada aplicación antes de utilizarla intensivamente.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Las aplicaciones, sus funcionalidades, disponibilidad y comisiones pueden variar según sus políticas internas o cambios regulatorios. Para información precisa y actualizada, consulta los términos y condiciones oficiales de cada billetera digital mencionada.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="spei-transferencias.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-digital-2.webp" alt="SPEI Transferencias" loading="lazy">
+                            <h4>Transferencias SPEI: todo lo que debes saber</h4>
+                        </a>
+                        <a href="prestamos-personales.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-dinero-1.webp" alt="Prestamos personales" loading="lazy">
+                            <h4>Préstamos personales: comparativa y requisitos</h4>
+                        </a>
+                        <a href="reclamaciones-bancarias.html" class="related-article-card">
+                            <img src="../assets/img/articles/finanzas-banco-1.webp" alt="Reclamaciones bancarias" loading="lazy">
+                            <h4>Reclamaciones bancarias en México</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía completa sobre billeteras digitales en México: opciones disponibles, beneficios, seguridad y cómo elegir la mejor para tus necesidades financieras.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

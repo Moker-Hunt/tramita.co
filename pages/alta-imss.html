@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía completa sobre el proceso de alta en el IMSS: requisitos, procedimiento paso a paso y documentos necesarios para trabajadores y beneficiarios.">
+    <title>Alta en el IMSS: Guía completa del proceso | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Alta en el IMSS: Guía completa del proceso</h1>
+            <p>Información detallada sobre el proceso de alta ante el Instituto Mexicano del Seguro Social: requisitos, procedimientos y opciones para trabajadores y empleadores.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag salud">Salud</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    8 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Abril 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/seguridad-social-1.webp" alt="Alta en el IMSS: Guía completa del proceso" class="featured-image">
+    <div class="image-caption">Información visual sobre Alta en el IMSS: Guía completa del proceso</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Seguridad Social</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/alta-imss.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/alta-imss.html&text=Alta%20en%20el%20IMSS%3A%20Gu%C3%ADa%20completa%20del%20proceso" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Alta%20en%20el%20IMSS%3A%20Gu%C3%ADa%20completa%20del%20proceso%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Falta-imss.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué es el alta en el IMSS?</h2>
+                <p>El alta en el Instituto Mexicano del Seguro Social (IMSS) es el proceso mediante el cual una persona queda registrada como derechohabiente y puede acceder a los servicios de salud y prestaciones sociales que ofrece esta institución. Este trámite es fundamental para los trabajadores en México, ya que les garantiza protección ante riesgos de salud, invalidez, vejez y otros imprevistos.</p>
+                <p>Existen diferentes tipos de alta en el IMSS:</p>
+                <ul>
+                    <li><strong>Alta como trabajador</strong>: Realizada por el empleador cuando contrata a un trabajador</li>
+                    <li><strong>Alta como beneficiario</strong>: Para familiares directos de un asegurado</li>
+                    <li><strong>Alta como trabajador independiente</strong>: Para personas que trabajan por cuenta propia</li>
+                    <li><strong>Continuación voluntaria</strong>: Para quienes desean mantener su seguridad social tras finalizar una relación laboral</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Alta como trabajador: responsabilidad del empleador</h2>
+                <p>Cuando una persona es contratada formalmente, el empleador tiene la obligación legal de dar de alta al trabajador ante el IMSS dentro de los primeros 5 días hábiles del inicio de la relación laboral. Este trámite no lo realiza directamente el trabajador, sino el departamento de recursos humanos o el área administrativa de la empresa.</p>
+                
+                <h3>Proceso que realiza el empleador</h3>
+                <ol>
+                    <li>Ingreso al portal IMSS desde su firma electrónica (FIEL) o e.firma</li>
+                    <li>Acceso al Sistema Único de Autodeterminación (SUA) o IDSE</li>
+                    <li>Registro del trabajador con sus datos personales y laborales</li>
+                    <li>Determinación del salario base de cotización</li>
+                    <li>Envío de la información al IMSS</li>
+                    <li>Recepción de la constancia de alta</li>
+                </ol>
+                
+                <p>Una vez completado el proceso, el trabajador recibirá su Número de Seguridad Social (NSS) si es la primera vez que es registrado en el IMSS, o se reactivará su número si ya contaba con uno anteriormente.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Documentos necesarios para el alta en el IMSS</h2>
+                <p>Para que el empleador pueda dar de alta a un trabajador, necesitará los siguientes documentos:</p>
+                <ul>
+                    <li>CURP del trabajador</li>
+                    <li>Acta de nacimiento</li>
+                    <li>Identificación oficial vigente (credencial INE, pasaporte)</li>
+                    <li>Comprobante de domicilio (no mayor a 3 meses)</li>
+                    <li>RFC del trabajador</li>
+                    <li>Número de Seguridad Social (si ya ha estado afiliado anteriormente)</li>
+                    <li>Contrato laboral firmado</li>
+                </ul>
+                
+                <h3>Para el alta de beneficiarios (cónyuge, hijos, padres)</h3>
+                <p>Si deseas registrar a tus beneficiarios para que también tengan acceso a los servicios médicos del IMSS, necesitarás:</p>
+                <ul>
+                    <li>Número de Seguridad Social del trabajador titular</li>
+                    <li>Identificación oficial del titular</li>
+                    <li>Acta de nacimiento de los beneficiarios</li>
+                    <li>Acta de matrimonio (en caso de cónyuge)</li>
+                    <li>CURP de los beneficiarios</li>
+                    <li>Comprobante de domicilio</li>
+                    <li>En caso de padres, documentos que acrediten dependencia económica</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>¿Cómo verificar que ya estás dado de alta?</h2>
+                <p>Para confirmar que tu alta en el IMSS ha sido procesada correctamente, puedes:</p>
+                
+                <h3>1. Consulta en línea</h3>
+                <ol>
+                    <li>Ingresar al portal del IMSS (www.imss.gob.mx)</li>
+                    <li>Acceder a la sección "Consulta tu vigencia de derechos"</li>
+                    <li>Proporcionar tu CURP, NSS y datos adicionales solicitados</li>
+                    <li>Verificar tu estatus de vigencia</li>
+                </ol>
+                
+                <h3>2. Consulta presencial</h3>
+                <p>Acudir a cualquier Unidad de Medicina Familiar (UMF) del IMSS con tu identificación oficial y tu NSS para solicitar tu constancia de vigencia de derechos.</p>
+                
+                <h3>3. Consulta por teléfono</h3>
+                <p>Llamar al Centro de Contacto IMSS (800 623 2323) y proporcionar tus datos para verificar tu estatus.</p>
+            </section>
+
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre el alta en el IMSS</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué hacer si mi empleador no me da de alta en el IMSS?</h3>
+                    <div class="faq-answer">
+                        <p>Si tu empleador no cumple con su obligación de darte de alta en el IMSS, puedes:</p>
+                        <ul>
+                            <li>Solicitar por escrito al empleador que realice el trámite</li>
+                            <li>Presentar una denuncia ante la Procuraduría Federal de la Defensa del Trabajo (PROFEDET)</li>
+                            <li>Acudir a la Delegación del IMSS correspondiente para reportar la situación</li>
+                            <li>Presentar una denuncia ante la Secretaría del Trabajo y Previsión Social</li>
+                        </ul>
+                        <p>Recuerda que es un derecho laboral fundamental y su incumplimiento está sujeto a sanciones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cuánto tiempo después de ser dado de alta puedo utilizar los servicios del IMSS?</h3>
+                    <div class="faq-answer">
+                        <p>Los servicios médicos están disponibles inmediatamente después de que se registra el alta. Sin embargo, algunas prestaciones específicas tienen periodos de espera:</p>
+                        <ul>
+                            <li>Atención médica general: Disponible inmediatamente</li>
+                            <li>Maternidad: 30 semanas de cotización previas al parto</li>
+                            <li>Enfermedades preexistentes: Pueden tener periodos de espera específicos</li>
+                            <li>Pensiones y otras prestaciones económicas: Requieren periodos de cotización más largos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo darme de alta en el IMSS por mi cuenta si soy trabajador independiente?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, como trabajador independiente puedes incorporarte voluntariamente al régimen obligatorio del IMSS a través del programa de Incorporación Voluntaria al Régimen Obligatorio (IVRO). Para hacerlo:</p>
+                        <ol>
+                            <li>Acude a la Subdelegación del IMSS que corresponda a tu domicilio</li>
+                            <li>Lleva identificación oficial, CURP, comprobante de domicilio y RFC</li>
+                            <li>Completa la solicitud correspondiente</li>
+                            <li>Realiza el pago de la cuota correspondiente</li>
+                        </ol>
+                        <p>Este régimen te ofrece servicios médicos, hospitalarios y algunas prestaciones sociales, aunque con ciertas limitaciones respecto al régimen obligatorio de un trabajador formal.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué sucede con mi seguro social si cambia mi situación laboral?</h3>
+                    <div class="faq-answer">
+                        <p>Cuando cambias de empleo o situación laboral, pueden ocurrir varios escenarios:</p>
+                        <ul>
+                            <li><strong>Cambio de empleo</strong>: Tu nuevo empleador debe darte de alta. Conservarás el mismo NSS y tu historial médico.</li>
+                            <li><strong>Desempleo</strong>: Cuentas con una conservación de derechos de 8 semanas para atención médica después de tu baja.</li>
+                            <li><strong>Jubilación</strong>: Mantienes tus servicios médicos de forma permanente.</li>
+                            <li><strong>Periodo sin trabajo formal</strong>: Puedes optar por la Continuación Voluntaria del Régimen Obligatorio (CVRO) o la Incorporación Voluntaria al Régimen Obligatorio (IVRO).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los requisitos, procesos y servicios del IMSS pueden modificarse con base en nuevas disposiciones legales. Para información precisa y actualizada, consulta directamente en la Subdelegación del IMSS correspondiente o a través de los canales oficiales del Instituto.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="semanas-cotizadas.html" class="related-article-card">
+                            <img src="../assets/img/articles/seguridad-social-2.webp" alt="Semanas cotizadas IMSS" loading="lazy">
+                            <h4>Cómo consultar tus semanas cotizadas en el IMSS</h4>
+                        </a>
+                        <a href="numero-imss.html" class="related-article-card">
+                            <img src="../assets/img/articles/seguridad-social-3.webp" alt="Alta Hacienda" loading="lazy">
+                            <h4>Obtener tu número de Seguridad Social (NSS)</h4>
+                        </a>
+                        <a href="ine-cita.html" class="related-article-card">
+                            <img src="../assets/img/articles/tramites-fila-2.webp" alt="Número de Seguridad Social" loading="lazy">
+                            <h4>Reserva tu cita para obtener tu INE</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía completa sobre el proceso de alta en el IMSS: requisitos, procedimiento paso a paso y documentos necesarios para trabajadores y beneficiarios.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

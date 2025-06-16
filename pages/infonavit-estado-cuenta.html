@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende cómo consultar tu estado de cuenta del INFONAVIT en línea, los documentos necesarios y cómo interpretar la información de tu crédito hipotecario.">
+    <title>Estado de cuenta del INFONAVIT: consulta en línea | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Estado de cuenta del INFONAVIT: consulta en línea</h1>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/vivienda-casa-1.webp" alt="Estado de cuenta del INFONAVIT: consulta en línea" class="featured-image">
+    <div class="image-caption">Información visual sobre la consulta del estado de cuenta INFONAVIT</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Vivienda</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/infonavit-estado-cuenta.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/infonavit-estado-cuenta.html&text=Estado%20de%20cuenta%20del%20INFONAVIT%3A%20consulta%20en%20l%C3%ADnea" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Estado%20de%20cuenta%20del%20INFONAVIT%3A%20consulta%20en%20l%C3%ADnea%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Finfonavit-estado-cuenta.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía paso a paso para consultar tu estado de cuenta del INFONAVIT en línea y entender la información que contiene.</p>
+</div>
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué es el estado de cuenta del INFONAVIT?</h2>
+                <p>El estado de cuenta del INFONAVIT es un documento que muestra la información detallada sobre tu crédito hipotecario. Incluye datos como el saldo actual, los pagos realizados, intereses generados, descuentos aplicados y otros movimientos relacionados con tu crédito.</p>
+                <p>Este documento es fundamental para llevar un control adecuado de tu crédito hipotecario y verificar que los pagos se estén aplicando correctamente. Además, es necesario para diversos trámites como la solicitud de constancias, reestructuras o liquidación anticipada.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>¿Cómo consultar tu estado de cuenta en línea?</h2>
+                <p>El INFONAVIT ofrece diferentes métodos para consultar tu estado de cuenta. El más práctico es a través de su portal web oficial, siguiendo estos pasos:</p>
+                
+                <ol>
+                    <li><strong>Accede al portal:</strong> Ingresa a <a href="https://micuenta.infonavit.org.mx" target="_blank">Mi Cuenta Infonavit</a> (portal oficial).</li>
+                    <li><strong>Inicia sesión:</strong> Si ya tienes una cuenta, ingresa con tu usuario y contraseña. Si es tu primera vez, necesitarás registrarte con tu NSS (Número de Seguridad Social) y datos personales.</li>
+                    <li><strong>Accede a la sección:</strong> Una vez dentro, busca la opción "Mi Crédito" o "Estado de Cuenta".</li>
+                    <li><strong>Selecciona el período:</strong> Algunos sistemas te permiten elegir el mes y año del estado de cuenta que deseas consultar.</li>
+                    <li><strong>Visualiza o descarga:</strong> Podrás ver tu estado de cuenta directamente en pantalla o descargar el PDF para guardarlo o imprimirlo.</li>
+                </ol>
+                
+                <p>También puedes utilizar la aplicación móvil "Infonavit" disponible para Android e iOS, que ofrece las mismas funcionalidades que el portal web.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Información que aparece en tu estado de cuenta</h2>
+                <p>Tu estado de cuenta del INFONAVIT contiene información detallada sobre tu crédito hipotecario, entre la que se encuentra:</p>
+                
+                <ul>
+                    <li><strong>Datos generales:</strong> Nombre, NSS, número de crédito y dirección del inmueble.</li>
+                    <li><strong>Saldo actual:</strong> Cantidad total que adeudas a la fecha de emisión del estado de cuenta.</li>
+                    <li><strong>Mensualidad:</strong> Monto que se descuenta mensualmente de tu salario o que debes pagar directamente.</li>
+                    <li><strong>Pagos realizados:</strong> Detalle de los pagos aplicados durante el periodo.</li>
+                    <li><strong>Intereses:</strong> Cargos por intereses aplicados a tu crédito.</li>
+                    <li><strong>Pagos anticipados:</strong> Si has realizado pagos adelantados, aparecerán en esta sección.</li>
+                    <li><strong>Seguros y comisiones:</strong> Cargos por seguros (daños, vida e incapacidad) y otras comisiones aplicables.</li>
+                    <li><strong>Información de reestructura:</strong> Si tu crédito ha sido reestructurado, aparecerán los detalles correspondientes.</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Alternativas para consultar tu estado de cuenta</h2>
+                <h3>Centro de Servicio INFONAVIT (CESI)</h3>
+                <p>Si prefieres la atención presencial, puedes acudir al Centro de Servicio INFONAVIT más cercano con una identificación oficial vigente (INE/IFE, pasaporte o cédula profesional) y solicitar la impresión de tu estado de cuenta.</p>
+                
+                <h3>Infonatel</h3>
+                <p>También puedes llamar a Infonatel al 800 008 3900 y seguir las instrucciones del sistema automático. Ten a la mano tu NSS y datos personales. El estado de cuenta se enviará al correo electrónico registrado.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Recomendaciones para el manejo de tu estado de cuenta</h2>
+                <ul>
+                    <li><strong>Revisa regularmente:</strong> Se recomienda consultar tu estado de cuenta al menos cada 3 meses para verificar que los pagos se estén aplicando correctamente.</li>
+                    <li><strong>Guarda tus estados de cuenta:</strong> Descarga y conserva copias de tus estados de cuenta, especialmente cuando realices pagos anticipados o reestructuraciones.</li>
+                    <li><strong>Verifica tu factor de pago:</strong> Si contribuyes mediante descuentos salariales, confirma que el factor de pago sea correcto según tu salario.</li>
+                    <li><strong>Actualiza tus datos:</strong> Mantén actualizados tus datos de contacto para recibir notificaciones importantes sobre tu crédito.</li>
+                </ul>
+            </section>
+            
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre el estado de cuenta del INFONAVIT</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cada cuánto tiempo se actualiza mi estado de cuenta?</h3>
+                    <div class="faq-answer">
+                        <p>El estado de cuenta se actualiza mensualmente. Los movimientos se reflejan aproximadamente 5 días hábiles después de realizado un pago o de aplicar cualquier modificación a tu crédito.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué hago si detecto un error en mi estado de cuenta?</h3>
+                    <div class="faq-answer">
+                        <p>Si encuentras alguna discrepancia o error en tu estado de cuenta, debes acudir personalmente a un Centro de Servicio INFONAVIT (CESI) con tu identificación oficial y los comprobantes de pago o documentos que respalden tu reclamación. También puedes iniciar el trámite a través de Infonatel (800 008 3900).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo pagar más de mi mensualidad para reducir mi deuda?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, puedes realizar pagos anticipados que se aplicarán directamente al saldo del capital, lo cual reduce el plazo o monto de tu deuda. Estos pagos se verán reflejados en tu siguiente estado de cuenta. Para realizarlos, puedes utilizar el portal Mi Cuenta Infonavit o acudir a ventanillas bancarias con tu número de crédito.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué significa el REA en mi estado de cuenta?</h3>
+                    <div class="faq-answer">
+                        <p>REA significa Régimen Especial de Amortización, un esquema de pago que se aplica cuando el acreditado deja de cotizar en el IMSS. En este régimen, debes realizar pagos directamente al INFONAVIT y el monto se calcula de manera diferente a las aportaciones vía nómina.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <a href="../index.html" class="back-to-home">Volver a inicio</a>
+        </div>
+    </div>
+    
+    <div class="disclaimer">
+        <p style="font-size: 0.9em; color: #777; margin-top: 1em;">
+            Este sitio es solo una guía informativa y <strong>no está afiliado a ninguna entidad gubernamental</strong>. No recopilamos datos personales ni realizamos trámites oficiales.
+        </p>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Aprende cómo consultar tu estado de cuenta del INFONAVIT en línea, los documentos necesarios y cómo interpretar la información de tu crédito hipotecario.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

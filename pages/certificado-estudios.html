@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía completa sobre cómo obtener tu certificado de estudios en México, requisitos y pasos a seguir para diferentes niveles educativos.">
+    <title>Certificado de estudios: cómo obtenerlo | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Certificado de estudios: cómo obtenerlo</h1>
+            <p>Guía completa para tramitar y obtener tu certificado oficial de estudios en cualquier nivel educativo en México.</p>
+            
+            <div class="article-meta">
+                <span class="category-tag documentos">Documentos</span>
+                <span class="reading-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    6 min
+                </span>
+                <span class="last-update">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Actualizado: Abril 2023
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/educacion-computadora-1.webp" alt="Certificado de estudios: cómo obtenerlo" class="featured-image">
+    <div class="image-caption">Información visual sobre Certificado de estudios: cómo obtenerlo</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Documentos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/certificado-estudios.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/certificado-estudios.html&text=Certificado%20de%20estudios%3A%20c%C3%B3mo%20obtenerlo" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Certificado%20de%20estudios%3A%20c%C3%B3mo%20obtenerlo%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fcertificado-estudios.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+        
+        <div class="article-content">
+            <section class="article-section">
+                <h2>¿Qué es un certificado de estudios?</h2>
+                <p>Un certificado de estudios es un documento oficial que avala que has completado un determinado nivel educativo o grado académico. Este documento es emitido por la institución educativa donde realizaste tus estudios o por las autoridades educativas correspondientes.</p>
+                <p>Los certificados de estudios son necesarios para diversos trámites como la continuación de estudios en otro nivel educativo, búsqueda de empleo, trámites migratorios o revalidación de estudios en el extranjero.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Tipos de certificados de estudios en México</h2>
+                <p>En el sistema educativo mexicano existen diferentes tipos de certificados según el nivel educativo:</p>
+                
+                <ul>
+                    <li><strong>Certificado de educación primaria:</strong> Acredita que se han cursado y aprobado los seis años de la educación primaria.</li>
+                    <li><strong>Certificado de educación secundaria:</strong> Avala la conclusión de los tres años de la educación secundaria.</li>
+                    <li><strong>Certificado de bachillerato:</strong> También conocido como certificado de preparatoria, acredita que se ha completado el nivel medio superior.</li>
+                    <li><strong>Certificado parcial:</strong> Documenta los estudios incompletos en cualquier nivel educativo.</li>
+                    <li><strong>Título profesional:</strong> Si bien no es un certificado como tal, es el documento que acredita los estudios superiores completos.</li>
+                    <li><strong>Certificado de especialidad, maestría o doctorado:</strong> Acreditan estudios de posgrado.</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>¿Cómo obtener un certificado de estudios?</h2>
+                <h3>Educación básica y media superior (SEP)</h3>
+                <p>Para obtener certificados de primaria, secundaria o bachillerato en escuelas públicas:</p>
+                
+                <ol>
+                    <li><strong>Acude al área de control escolar:</strong> Visita la escuela donde estudiaste o la supervisión escolar correspondiente.</li>
+                    <li><strong>Presenta documentación:</strong> Generalmente se requiere identificación oficial, CURP y, en algunos casos, fotografías.</li>
+                    <li><strong>Realiza el pago:</strong> Cubre el costo correspondiente. Las tarifas varían según el estado y nivel educativo.</li>
+                    <li><strong>Espera el tiempo de entrega:</strong> Puede variar desde entrega inmediata hasta varias semanas, dependiendo de la institución.</li>
+                </ol>
+                
+                <h3>Educación superior (universidades)</h3>
+                <p>Para obtener certificados de licenciatura o posgrado:</p>
+                
+                <ol>
+                    <li><strong>Acude al departamento de servicios escolares:</strong> Visita la universidad donde realizaste tus estudios.</li>
+                    <li><strong>Solicita el trámite:</strong> Completa los formularios requeridos por la institución.</li>
+                    <li><strong>Presenta documentación:</strong> Usualmente se requiere identificación oficial, CURP, fotografías según las especificaciones, y en algunos casos, carta de no adeudo.</li>
+                    <li><strong>Realiza el pago:</strong> Cubre el monto establecido por la institución.</li>
+                    <li><strong>Recoge tu documento:</strong> Una vez elaborado, recoge tu certificado en la ventanilla correspondiente.</li>
+                </ol>
+            </section>
+            
+            <section class="article-section">
+                <h2>Trámites en línea</h2>
+                <p>Algunas instituciones ya ofrecen la posibilidad de solicitar certificados de estudios de manera digital:</p>
+                
+                <h3>Sistema Educativo Nacional (SEN)</h3>
+                <p>Para certificados de educación básica y media superior:</p>
+                <ol>
+                    <li>Ingresa al portal del <a href="https://www.gob.mx/sep" target="_blank">Sistema Educativo Nacional</a>.</li>
+                    <li>Busca la sección de "Trámites y Servicios" o "Certificación".</li>
+                    <li>Sigue las instrucciones para solicitar tu certificado digital.</li>
+                </ol>
+                
+                <h3>Universidades</h3>
+                <p>Muchas universidades cuentan con sistemas en línea para solicitar certificados:</p>
+                <ol>
+                    <li>Ingresa al portal de servicios escolares de tu universidad.</li>
+                    <li>Busca la opción de "Certificados" o "Documentos oficiales".</li>
+                    <li>Sigue las instrucciones específicas de tu institución.</li>
+                </ol>
+                
+                <p>Algunas instituciones han implementado certificados digitales con firma electrónica que tienen la misma validez legal que los certificados físicos.</p>
+            </section>
+            
+            <section class="article-section">
+                <h2>Recomendaciones importantes</h2>
+                <ul>
+                    <li><strong>Verifica los requisitos específicos:</strong> Cada institución puede tener requisitos adicionales.</li>
+                    <li><strong>Confirma costos actualizados:</strong> Las tarifas pueden cambiar con el tiempo.</li>
+                    <li><strong>Solicita con anticipación:</strong> Especialmente si necesitas el documento para otro trámite con fecha límite.</li>
+                    <li><strong>Conserva copias certificadas:</strong> Es recomendable tener varias copias certificadas de tu certificado original.</li>
+                    <li><strong>Verifica la autenticidad:</strong> Si vas a presentar tu certificado en el extranjero, consulta si requiere apostilla o legalización.</li>
+                </ul>
+            </section>
+            
+            <section class="article-section">
+                <h2>Certificados extraviados o dañados</h2>
+                <p>Si perdiste tu certificado original o se dañó, puedes solicitar un duplicado:</p>
+                <ol>
+                    <li>Acude a la institución donde estudiaste o a la autoridad educativa correspondiente.</li>
+                    <li>Presenta una identificación oficial y, en algunos casos, una carta explicando los motivos de la reposición.</li>
+                    <li>Realiza el pago por la reposición del documento, que suele ser más elevado que el trámite original.</li>
+                    <li>En el documento reexpedido generalmente aparecerá una leyenda indicando que es un duplicado.</li>
+                </ol>
+            </section>
+            
+            <section class="article-section faq-section">
+                <h2>Preguntas frecuentes sobre certificados de estudios</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Cuánto tiempo tarda la expedición de un certificado?</h3>
+                    <div class="faq-answer">
+                        <p>Los tiempos varían según la institución y nivel educativo. Puede ser desde entrega inmediata hasta 30 días hábiles. En temporadas de alta demanda (como fin de ciclo escolar) los tiempos pueden extenderse.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Tiene caducidad un certificado de estudios?</h3>
+                    <div class="faq-answer">
+                        <p>No, los certificados de estudios no tienen fecha de caducidad. Sin embargo, algunas instituciones o empleadores pueden solicitar que el documento no sea muy antiguo para ciertos trámites específicos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Puedo obtener mi certificado si tengo adeudos con la institución?</h3>
+                    <div class="faq-answer">
+                        <p>Generalmente no. La mayoría de las instituciones educativas requieren que no existan adeudos económicos, de material bibliotecario o de laboratorio para emitir certificados oficiales. Es importante liquidar cualquier pendiente antes de iniciar el trámite.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Los certificados digitales tienen la misma validez que los físicos?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, siempre y cuando cuenten con firma electrónica avanzada y cumplan con los requisitos establecidos por las autoridades educativas. Los certificados digitales emitidos por instituciones oficiales tienen plena validez legal en México.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los requisitos y procesos para obtener certificados de estudios pueden variar según la institución educativa y la entidad federativa. Para información más precisa, consulta directamente con tu institución educativa o con la autoridad educativa correspondiente.</p>
+            </div>
+            
+            <div class="article-navigation">
+                <a href="../index.html" class="back-to-home">Volver a inicio</a>
+                
+                <div class="related-articles">
+                    <h3>Artículos relacionados</h3>
+                    <div class="related-articles-grid">
+                        <a href="cedula-profesional.html" class="related-article-card">
+                            <img src="../assets/img/articles/educacion-biblioteca-1.webp" alt="Cédula profesional" loading="lazy">
+                            <h4>Cómo obtener la cédula profesional en México</h4>
+                        </a>
+                        <a href="homologacion-estudios.html" class="related-article-card">
+                            <img src="../assets/img/articles/educacion-aula-2.webp" alt="Homologación de estudios" loading="lazy">
+                            <h4>Homologación de estudios extranjeros en México</h4>
+                        </a>
+                        <a href="apostilla-documentos.html" class="related-article-card">
+                            <img src="../assets/img/articles/documentos-archivo-1.webp" alt="Apostilla de documentos" loading="lazy">
+                            <h4>Apostilla de Documentos</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Guía completa sobre cómo obtener tu certificado de estudios en México, requisitos y pasos a seguir para diferentes niveles educativos.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

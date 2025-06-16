@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información detallada sobre el pasaporte mexicano: requisitos, costos, proceso de tramitación y vigencia. Guía completa para mexicanos.">
+    <title>Pasaporte Mexicano: Requisitos, Costos y Trámite | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Pasaporte Mexicano</h1>
+            <p>Todo lo que necesitas saber sobre requisitos, costos y proceso de tramitación</p>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/documentos-archivo-2.webp" alt="Pasaporte Mexicano" class="featured-image">
+    <div class="image-caption">Información visual sobre el Pasaporte Mexicano y su proceso de tramitación</div>
+</div>
+
+<div class="article-meta-info">
+    <div class="article-category-info">
+        <span class="article-meta-label">Categoría:</span>
+        <span class="article-meta-value">Documentos</span>
+    </div>
+    <div class="article-author-info">
+        <span class="article-meta-label">Autor:</span>
+        <span class="article-meta-value">Equipo editorial Tramita.co</span>
+    </div>
+    <div class="article-share">
+        <span class="article-meta-label">Compartir:</span>
+        <div class="social-share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/pasaporte-mexicano.html" target="_blank" class="share-button facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://tramita.co/pages/pasaporte-mexicano.html&text=Pasaporte%20Mexicano" target="_blank" class="share-button twitter">Twitter</a>
+            <a href="https://api.whatsapp.com/send?text=Pasaporte%20Mexicano%20-%20https%3A%2F%2Ftramita.co%2Fpages%2Fpasaporte-mexicano.html" target="_blank" class="share-button whatsapp">WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Todo lo que necesitas saber sobre el pasaporte mexicano: requisitos, costos, proceso de tramitación y vigencia.</p>
+</div>
+        <div class="article-content">
+            <p>El pasaporte mexicano es un documento de viaje e identificación emitido por la Secretaría de Relaciones Exteriores (SRE) a ciudadanos mexicanos. Es reconocido internacionalmente y permite a los mexicanos viajar al extranjero y acreditar su nacionalidad e identidad.</p>
+            
+            <h2>Tipos de Pasaporte</h2>
+            <p>En México se emiten los siguientes tipos de pasaportes:</p>
+            <ul>
+                <li><strong>Pasaporte ordinario:</strong> Emitido a la ciudadanía en general, de color verde oscuro.</li>
+                <li><strong>Pasaporte oficial:</strong> Para funcionarios del gobierno en misiones oficiales.</li>
+                <li><strong>Pasaporte diplomático:</strong> Para diplomáticos y altos funcionarios.</li>
+            </ul>
+            <p>Esta guía se centra en el pasaporte ordinario, que es el que tramita la mayoría de los ciudadanos mexicanos.</p>
+            
+            <h2>Vigencia y Costos</h2>
+            <p>Los pasaportes ordinarios mexicanos se emiten con diferentes vigencias y costos:</p>
+            <ul>
+                <li><strong>1 año:</strong> Para menores de 3 años.</li>
+                <li><strong>3 años:</strong> Opción disponible para todos los ciudadanos.</li>
+                <li><strong>6 años:</strong> Opción disponible para todos los ciudadanos.</li>
+                <li><strong>10 años:</strong> Opción disponible para mayores de edad.</li>
+            </ul>
+            <p>Los costos varían cada año según lo establecido en la Ley Federal de Derechos. Es recomendable consultar el sitio oficial de la SRE para conocer las tarifas actualizadas.</p>
+            
+            <h2>Requisitos Generales</h2>
+            <p>Para tramitar el pasaporte mexicano por primera vez, necesitas:</p>
+            <ol>
+                <li><strong>Acta de nacimiento:</strong> Original y copia.</li>
+                <li><strong>Identificación oficial:</strong> Como credencial para votar (INE), cédula profesional o cartilla militar (original y copia).</li>
+                <li><strong>CURP:</strong> Impresión reciente.</li>
+                <li><strong>Comprobante de domicilio:</strong> No mayor a 3 meses (original y copia).</li>
+                <li><strong>Pago de derechos:</strong> Según la vigencia solicitada.</li>
+                <li><strong>Fotografía:</strong> Tomada en la oficina de pasaportes al momento del trámite.</li>
+            </ol>
+            
+            <h3>Requisitos adicionales para menores de edad</h3>
+            <ul>
+                <li>Presencia de ambos padres con identificaciones oficiales.</li>
+                <li>Acta de nacimiento del menor.</li>
+                <li>Cuando no pueden acudir ambos padres, se requiere permiso notarial del ausente.</li>
+            </ul>
+            
+            <h2>Proceso de Tramitación</h2>
+            <ol>
+                <li><strong>Agendar cita:</strong> A través del sitio web de la SRE o por teléfono.</li>
+                <li><strong>Reunir documentos:</strong> Según los requisitos mencionados.</li>
+                <li><strong>Realizar el pago:</strong> En cualquier institución bancaria autorizada.</li>
+                <li><strong>Acudir a la cita:</strong> Presentar documentación completa y pago.</li>
+                <li><strong>Toma de datos biométricos:</strong> Fotografía, huellas digitales y firma.</li>
+                <li><strong>Recepción del pasaporte:</strong> Generalmente el mismo día o según lo indicado por la oficina.</li>
+            </ol>
+            
+            <h2>Renovación del Pasaporte</h2>
+            <p>Para renovar tu pasaporte mexicano, necesitarás:</p>
+            <ul>
+                <li>Pasaporte anterior (original y copia).</li>
+                <li>Identificación oficial vigente (original y copia).</li>
+                <li>CURP impresa.</li>
+                <li>Pago de derechos según la vigencia requerida.</li>
+            </ul>
+            <p>Si tu pasaporte anterior está vigente, el trámite es más sencillo. Si está vencido hace más de un año o fue emitido antes de 2013, podrían solicitarte documentación adicional.</p>
+            
+            <h2>Pasaporte por Robo o Extravío</h2>
+            <p>En caso de robo o extravío de tu pasaporte:</p>
+            <ol>
+                <li>Presenta una denuncia ante el Ministerio Público o autoridad correspondiente.</li>
+                <li>Solicita la renovación con los requisitos normales más la denuncia.</li>
+                <li>Se generará un costo adicional por reposición en caso de extravío.</li>
+            </ol>
+            
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>¿Puedo tramitar un pasaporte de emergencia?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, la SRE puede emitir pasaportes de emergencia en casos justificados como emergencias médicas, fallecimiento de un familiar en el extranjero o motivos laborales urgentes. Deberás presentar documentación que acredite la emergencia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Cuánto tiempo tarda en entregarse el pasaporte?</h3>
+                    <div class="faq-answer">
+                        <p>Normalmente, el pasaporte se entrega el mismo día de la cita en las oficinas metropolitanas. En delegaciones foráneas, puede variar de 3 a 5 días hábiles.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Puedo tramitar mi pasaporte desde el extranjero?</h3>
+                    <div class="faq-answer">
+                        <p>Sí, puedes tramitar tu pasaporte en cualquier consulado o embajada de México en el extranjero. Los requisitos son similares, pero pueden variar según el país.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Es necesario renovar el pasaporte si cambié de apariencia?</h3>
+                    <div class="faq-answer">
+                        <p>Si has tenido cambios significativos en tu apariencia física que dificulten tu identificación con la fotografía de tu pasaporte actual, es recomendable renovarlo aunque no haya expirado.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial. Los requisitos, costos y procedimientos pueden cambiar. Siempre consulta la información oficial más reciente en el sitio web de la Secretaría de Relaciones Exteriores.</p>
+            </div>
+            
+            <a href="../index.html" class="back-to-home">Volver a inicio</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Información detallada sobre el pasaporte mexicano: requisitos, costos, proceso de tramitación y vigencia. Guía completa para mexicanos.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

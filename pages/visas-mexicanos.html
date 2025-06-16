@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información completa sobre visas internacionales para ciudadanos mexicanos: requisitos, procesos, costos y consejos para trámites en Estados Unidos, Europa y otras regiones.">
+    <title>Visas para Mexicanos | Tramita.co</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        :root {
+            --dark-plum: #4B1D3F;
+            --red-accent: #FF6B6B;
+            --yellow-accent: #FDD85D;
+            --copper-brown: #8C5E45;
+            --beige-gray: #B8AFA2;
+            --lilac-purple: #C9A4DE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-plum);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 1.5rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        /* Article Cards */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS with defer loading -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">Tramita.co</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../legal/terms-of-use.html">Términos de Uso</a></li>
+                    <li><a href="../legal/privacy-policy.html">Privacidad</a></li>
+                    <li><a href="../legal/about-us.html">Sobre Nosotros</a></li>
+                    <li><a href="../legal/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Article Header -->
+    <section class="article-header">
+        <div class="container">
+            <h1>Visas para Ciudadanos Mexicanos</h1>
+            <p>Guía de trámites para viajar al extranjero</p>
+        </div>
+    </section>
+    
+    <!-- Article Content -->
+    <div class="container">
+        
+<div class="article-featured-image">
+    <img src="../assets/img/articles/documentos-3.webp" alt="Visas para mexicanos" class="featured-image">
+    <div class="image-caption">Trámites y documentación para visas internacionales</div>
+</div>
+
+<div class="article-meta">
+    <span class="category-tag internacional">Internacional</span>
+    <span class="reading-time">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        8 min
+    </span>
+    <span class="last-update">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Actualizado: Julio 2023
+    </span>
+</div>
+
+<div class="article-meta-author">
+    <span class="author-label">Autor:</span>
+    <span class="author-name">Equipo editorial Tramita.co</span>
+</div>
+
+<div class="social-share">
+    <span class="share-label">Compartir:</span>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://tramita.co/pages/visas-mexicanos.html" target="_blank" class="share-button facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+    </a>
+    <a href="https://twitter.com/intent/tweet?text=Visas%20para%20ciudadanos%20mexicanos:%20requisitos%20y%20tr%C3%A1mites&url=https://tramita.co/pages/visas-mexicanos.html" target="_blank" class="share-button twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+        </svg>
+    </a>
+    <a href="https://api.whatsapp.com/send?text=Visas%20para%20ciudadanos%20mexicanos:%20requisitos%20y%20tr%C3%A1mites%20https://tramita.co/pages/visas-mexicanos.html" target="_blank" class="share-button whatsapp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+    </a>
+</div>
+        <div class="article-content">
+            <p>Como ciudadano mexicano, viajar al extranjero puede requerir diversos trámites dependiendo del país de destino. Esta guía ofrece información general sobre los requisitos de visado para los destinos más comunes.</p>
+            
+            <h2>Países que no requieren visa para mexicanos</h2>
+            <p>Los mexicanos pueden viajar sin visa a más de 150 países y territorios por estancias cortas (generalmente de 30 a 180 días), entre ellos:</p>
+            <ul>
+                <li>La mayoría de los países de América Latina y el Caribe</li>
+                <li>Países del espacio Schengen (hasta 90 días en un período de 180 días)</li>
+                <li>Japón (hasta 180 días)</li>
+                <li>Corea del Sur (hasta 90 días)</li>
+                <li>Turquía (hasta 90 días)</li>
+                <li>Reino Unido (con permiso electrónico previo)</li>
+            </ul>
+            
+            <h2>Visa para Estados Unidos</h2>
+            <p>Estados Unidos es uno de los destinos más populares para los mexicanos y requiere visa para la mayoría de los viajeros.</p>
+            
+            <h3>Tipos de visa para EE.UU.</h3>
+            <ul>
+                <li><strong>B1/B2 (Turista/Negocios):</strong> Para viajes temporales de turismo, visita a familiares o negocios</li>
+                <li><strong>F1 (Estudiante):</strong> Para cursar estudios académicos</li>
+                <li><strong>J1 (Intercambio):</strong> Para programas de intercambio cultural, académico o profesional</li>
+                <li><strong>H1B (Trabajo temporal):</strong> Para profesionales calificados</li>
+            </ul>
+            
+            <h3>Proceso para solicitar la visa B1/B2 (turista)</h3>
+            <ol>
+                <li><strong>Llenar el formulario DS-160:</strong> Disponible en el <a href="https://ceac.state.gov/genniv/">sitio web oficial</a></li>
+                <li><strong>Pagar la tarifa:</strong> Actualmente 185 USD (aproximadamente 3,200 MXN)</li>
+                <li><strong>Agendar cita:</strong> En la Embajada o Consulados de EE.UU. en México</li>
+                <li><strong>Reunir documentación:</strong> Pasaporte, confirmación del DS-160, comprobante de pago, fotografía, comprobantes de arraigo</li>
+                <li><strong>Asistir a la entrevista:</strong> Presentarse puntualmente en la fecha y hora asignadas</li>
+            </ol>
+            
+            <h3>Documentación recomendada para la entrevista</h3>
+            <ul>
+                <li>Pasaporte vigente (mínimo 6 meses de vigencia)</li>
+                <li>Comprobantes de arraigo (propiedad, empleo estable, lazos familiares)</li>
+                <li>Comprobantes de solvencia económica</li>
+                <li>Itinerario de viaje</li>
+                <li>Carta invitación (si aplica)</li>
+            </ul>
+            
+            <h2>Visas para Europa (Espacio Schengen)</h2>
+            <p>Los ciudadanos mexicanos pueden ingresar sin visa al espacio Schengen para estancias turísticas o de negocios de hasta 90 días en un período de 180 días. Sin embargo, a partir de 2025, se implementará el Sistema Europeo de Información y Autorización de Viajes (ETIAS), un permiso electrónico que será requisito previo al viaje.</p>
+            
+            <h3>Países que forman parte del espacio Schengen:</h3>
+            <p>Alemania, Austria, Bélgica, Dinamarca, Eslovenia, España, Estonia, Finlandia, Francia, Grecia, Hungría, Islandia, Italia, Letonia, Liechtenstein, Lituania, Luxemburgo, Malta, Noruega, Países Bajos, Polonia, Portugal, República Checa, Eslovaquia, Suecia y Suiza.</p>
+            
+            <h3>Requisitos para ingresar al espacio Schengen:</h3>
+            <ul>
+                <li>Pasaporte con validez mínima de 3 meses posteriores a la fecha prevista de salida</li>
+                <li>Billetes de ida y vuelta</li>
+                <li>Comprobante de alojamiento</li>
+                <li>Seguro médico de viaje con cobertura mínima de 30,000 euros</li>
+                <li>Comprobantes de solvencia económica</li>
+            </ul>
+            
+            <h2>Visas para Canadá</h2>
+            <p>Los ciudadanos mexicanos necesitan una Autorización Electrónica de Viaje (eTA) para vuelos o tránsito aéreo por Canadá, y una visa para entradas por tierra o mar.</p>
+            
+            <h3>eTA (Electronic Travel Authorization)</h3>
+            <p>Es un requisito de entrada para viajeros exentos de visa que vuelan a Canadá. Cuesta 7 CAD y se solicita en línea. Está vinculada electrónicamente al pasaporte y tiene una validez de hasta 5 años o hasta que el pasaporte expire.</p>
+            
+            <h3>Requisitos para eTA:</h3>
+            <ul>
+                <li>Pasaporte válido</li>
+                <li>Correo electrónico</li>
+                <li>Tarjeta de crédito para el pago</li>
+            </ul>
+            
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>¿Qué es el pasaporte electrónico y por qué es importante?</h3>
+                    <div class="faq-answer">
+                        <p>El pasaporte electrónico contiene un chip que almacena información biométrica y ofrece mayor seguridad. Es importante porque algunos países exigen este tipo de pasaporte para ingresar sin visa o para procesar ciertos tipos de permisos. México expide pasaportes electrónicos desde 2021.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Cómo puedo saber si necesito visa para un país específico?</h3>
+                    <div class="faq-answer">
+                        <p>Puedes consultar el sitio web oficial de la Secretaría de Relaciones Exteriores de México o contactar directamente a la embajada o consulado del país que deseas visitar. La información sobre requisitos de visado puede cambiar, por lo que es importante verificar los requisitos actuales antes de viajar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Qué es el arraigo y por qué es importante para solicitar visas?</h3>
+                    <div class="faq-answer">
+                        <p>El arraigo se refiere a los vínculos que demuestran que regresarás a tu país de origen después de tu viaje. Incluye comprobantes de empleo estable, propiedades, lazos familiares, entre otros. Es importante porque los consulados evalúan estos factores para determinar si otorgan la visa, ya que buscan minimizar el riesgo de inmigración irregular.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+<!-- Información adicional y recursos -->
+<div class="additional-resources">
+    <h3>Recursos adicionales</h3>
+    <ul class="resources-list">
+        <li>
+            <a href="../index.html" class="resource-link">Más trámites en Tramita.co</a>
+            <span class="resource-description">Consulta otros trámites populares en nuestro sitio</span>
+        </li>
+    </ul>
+</div>
+
+<!-- Стандартный disclaimer -->
+<div class="disclaimer">
+                <p><strong>Importante:</strong> Esta información es meramente referencial y puede cambiar. Los requisitos de visa varían según el país y pueden modificarse sin previo aviso. Siempre verifica la información actualizada en los sitios oficiales de las embajadas o consulados correspondientes antes de planear tu viaje.</p>
+            </div>
+            
+            <div class="article-navigation">
+    <a href="../index.html" class="back-to-home">Volver a inicio</a>
+    
+    <div class="related-articles">
+        <h3>Artículos relacionados</h3>
+        <div class="related-articles-grid">
+            <a href="pasaporte-mexicano.html" class="related-article-card">
+                <img src="../assets/img/articles/documentos-1.webp" alt="Pasaporte mexicano" loading="lazy">
+                <h4>Trámite de pasaporte mexicano: requisitos y proceso</h4>
+            </a>
+            <a href="apostilla-documentos.html" class="related-article-card">
+                <img src="../assets/img/articles/documentos-2.webp" alt="Apostilla de documentos" loading="lazy">
+                <h4>Apostilla de documentos mexicanos: guía completa</h4>
+            </a>
+            <a href="seguro-viajero.html" class="related-article-card">
+                <img src="../assets/img/articles/seguros-3.webp" alt="Seguro de viajero" loading="lazy">
+                <h4>Seguro de viajero: protección durante tus viajes internacionales</h4>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">Tramita.co</div>
+                    <p>Información objetiva sobre trámites mexicanos</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Sitio</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../legal/about-us.html">Sobre Nosotros</a>
+                    <a href="../legal/contacto.html">Contacto</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
+            <div class="cookie-links">
+                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
+                <a href="../legal/terms-of-use.html">Términos de Uso</a>
+                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
+    </div>
+
+<div class="article-summary">
+    <h4>Resumen:</h4>
+    <p>Información completa sobre visas internacionales para ciudadanos mexicanos: requisitos, procesos, costos y consejos para trámites en Estados Unidos, Europa y otras regiones.</p>
+</div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
