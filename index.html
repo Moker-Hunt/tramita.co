@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
     
+    <link rel="preload" as="image" href="assets/img/articles/documentos-identidad-2.webp">
+    
     <style>
         :root {
             --dark-plum: #4B1D3F;
@@ -107,6 +109,18 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(ellipse at center, rgba(201, 164, 222, 0.1) 0%, rgba(75, 29, 63, 0) 70%);
+            animation: pulse 15s infinite ease-in-out;
+            z-index: -1;
         }
         
         .hero h1 {
@@ -1180,8 +1194,8 @@
         <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
     </div>
     
-    <script src="assets/js/main.js" defer=""></script>
-    <script src="assets/js/search.js" defer=""></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
 
 
 </body>
