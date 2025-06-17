@@ -334,6 +334,67 @@
                 min-width: 100%;
             }
         }
+
+        
+        .article-image {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .article-card:hover .article-image img {
+            transform: scale(1.08);
+}
+
+        .article-image img {
+            width: 360px;
+            height: 180px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        @media (max-width: 1184px) {
+
+            .article-image img{
+                width: 500px;
+            }
+        }
+
+        @media (max-width: 790px) {
+
+            .article-image img{
+                width: 662px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .article-image img{
+                width: 502px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .article-image img{
+                width: 420px;
+            }
+        }
+
+        @media (max-width: 400px) {
+
+            .article-image img{
+                width: 330px;
+            }
+        }
+
+        @media (max-width: 350px) {
+
+            .article-image img{
+                width: 285px;
+            }
+        }
     </style>
     
     <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
@@ -369,7 +430,8 @@
     </section>
     
     <section class="container">
-        <div class="articles-grid" id="articlesGrid"><a href="pages/curp.html" class="article-card variant-3" style="--card-index: 0;">
+        <div class="articles-grid" id="articlesGrid">
+            <a href="pages/curp.html" class="article-card variant-3" style="--card-index: 0;">
                 <div class="article-image">
                     <img src="assets/img/articles/documentos-identidad-2.webp" alt="¿Qué es el CURP y cómo consultarlo en línea?">
                     <div class="image-overlay"></div>
@@ -393,7 +455,8 @@
                     </div>
                 </div>
                 <div class="card-shine"></div>
-            </a><a href="pages/rfc.html" class="article-card variant-2" style="--card-index: 1;">
+            </a>
+            <a href="pages/rfc.html" class="article-card variant-2" style="--card-index: 1;">
                 <div class="article-image">
                     <img src="assets/img/articles/documentos-fiscal-1.webp" alt="¿Qué es el RFC y cómo obtenerlo sin complicaciones?" fetchpriority="high">
                     <div class="image-overlay"></div>
