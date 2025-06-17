@@ -6,10 +6,8 @@
     <meta name="description" content="Tramita.co - Guía informativa para trámites y servicios en México">
     <title>Tramita.co - Guía de Trámites y Servicios en México</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     
-    <!-- Critical CSS Inline -->
     <style>
         :root {
             --dark-plum: #4B1D3F;
@@ -46,7 +44,6 @@
             padding: 0 15px;
         }
         
-        /* Header Styles */
         header {
             padding: 1.5rem 0;
         }
@@ -102,7 +99,6 @@
             font-size: 1.5rem;
         }
         
-        /* Hero Section */
         .hero {
             padding: 4rem 0 2rem;
             text-align: center;
@@ -125,7 +121,6 @@
             color: var(--beige-gray);
         }
         
-        /* Search Bar */
         .search-container {
             max-width: 600px;
             margin: 0 auto 3rem;
@@ -162,19 +157,16 @@
             color: var(--lilac-purple);
         }
         
-        /* Article Cards */
         .articles-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             padding: 1rem 0 4rem;
         }
         
-        /* Минимальные базовые стили, основные стили в styles.css */
         .article-card {
             height: 100%;
         }
         
-        /* Footer */
         footer {
             padding: 3rem 0 1.5rem;
         }
@@ -221,7 +213,6 @@
             color: var(--beige-gray);
         }
         
-        /* Cookie Banner */
         .cookie-banner {
             position: fixed;
             bottom: 20px;
@@ -274,7 +265,6 @@
             background-color: #6d2b5b;
         }
         
-        /* Media Queries */
         @media (max-width: 992px) {
             .articles-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -346,12 +336,10 @@
         }
     </style>
     
-    <!-- Non-critical CSS with defer loading -->
     <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
@@ -368,13 +356,11 @@
         </div>
     </header>
     
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>Tu Guía de Trámites y Servicios en México</h1>
             <p>Información clara y actualizada sobre documentos oficiales, trámites y servicios gubernamentales en México.</p>
             
-            <!-- Search Bar -->
             <div class="search-container">
                 <input type="text" placeholder="Buscar información sobre trámites..." id="searchInput">
                 <div class="search-icon">🔍</div>
@@ -382,14 +368,1259 @@
         </div>
     </section>
     
-    <!-- Articles Grid -->
     <section class="container">
-        <div class="articles-grid" id="articlesGrid">
-            <!-- Las tarjetas de artículos se generarán dinámicamente con JavaScript -->
+        <div class="articles-grid" id="articlesGrid"><a href="pages/curp.html" class="article-card variant-3" style="--card-index: 0;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-identidad-2.webp" alt="¿Qué es el CURP y cómo consultarlo en línea?" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">¿Qué es el CURP y cómo consultarlo en línea?</h3>
+                    <p class="article-description">Guía completa sobre la Clave Única de Registro de Población: cómo obtenerla, consultarla y para qué sirve.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/rfc.html" class="article-card variant-2" style="--card-index: 1;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-fiscal-1.webp" alt="¿Qué es el RFC y cómo obtenerlo sin complicaciones?" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">¿Qué es el RFC y cómo obtenerlo sin complicaciones?</h3>
+                    <p class="article-description">Todo sobre el Registro Federal de Contribuyentes: proceso de obtención, consulta y su importancia en México.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/multas-cdmx.html" class="article-card variant-1" style="--card-index: 2;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vehiculos-multa-3.webp" alt="Multas CDMX: cómo consultarlas y evitar recargos" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🚗</span>
+                        <span class="category-name">Vehículos</span>
+                    </div>
+                    <h3 class="article-title">Multas CDMX: cómo consultarlas y evitar recargos</h3>
+                    <p class="article-description">Información sobre consulta de multas de tránsito en Ciudad de México y cómo evitar recargos e intereses.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/numero-imss.html" class="article-card variant-3" style="--card-index: 3;">
+                <div class="article-image">
+                    <img src="assets/img/articles/seguridad-social-3.webp" alt="¿Cómo obtener o recuperar tu Número de Seguridad Social?" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏥</span>
+                        <span class="category-name">Seguridad Social</span>
+                    </div>
+                    <h3 class="article-title">¿Cómo obtener o recuperar tu Número de Seguridad Social?</h3>
+                    <p class="article-description">Guía para obtener, consultar o recuperar tu Número de Seguridad Social del IMSS fácilmente.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/alta-imss.html" class="article-card variant-1" style="--card-index: 4;">
+                <div class="article-image">
+                    <img src="assets/img/articles/seguridad-social-1.webp" alt="Proceso de alta en el IMSS para trabajadores" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏥</span>
+                        <span class="category-name">Seguridad Social</span>
+                    </div>
+                    <h3 class="article-title">Proceso de alta en el IMSS para trabajadores</h3>
+                    <p class="article-description">Información detallada sobre el proceso de afiliación al Instituto Mexicano del Seguro Social.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            8 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/semanas-cotizadas.html" class="article-card variant-3" style="--card-index: 5;">
+                <div class="article-image">
+                    <img src="assets/img/articles/seguridad-social-2.webp" alt="Consulta de semanas cotizadas ante el IMSS" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏥</span>
+                        <span class="category-name">Seguridad Social</span>
+                    </div>
+                    <h3 class="article-title">Consulta de semanas cotizadas ante el IMSS</h3>
+                    <p class="article-description">Cómo verificar tu historial laboral y semanas cotizadas en el Seguro Social.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/ine-consulta.html" class="article-card variant-2" style="--card-index: 6;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-firma-1.webp" alt="Consulta del estado de tu credencial INE" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Consulta del estado de tu credencial INE</h3>
+                    <p class="article-description">Verifica el estado de tu credencial para votar y conoce cuándo debes renovarla.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/ine-cita.html" class="article-card variant-2" style="--card-index: 7;">
+                <div class="article-image">
+                    <img src="assets/img/articles/tramites-fila-2.webp" alt="¿Cómo agendar una cita en el INE?" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏛️</span>
+                        <span class="category-name">Trámites Oficiales</span>
+                    </div>
+                    <h3 class="article-title">¿Cómo agendar una cita en el INE?</h3>
+                    <p class="article-description">Guía paso a paso para programar tu cita en el Instituto Nacional Electoral.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/ine-reposicion.html" class="article-card variant-1" style="--card-index: 8;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-identidad-3.webp" alt="Reposición de credencial INE por robo o extravío" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Reposición de credencial INE por robo o extravío</h3>
+                    <p class="article-description">Proceso para solicitar una nueva credencial de elector en caso de pérdida o robo.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/afore-consulta.html" class="article-card variant-3" style="--card-index: 9;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-retiro-1.webp" alt="¿Cómo consultar tu AFORE y tu saldo?" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">¿Cómo consultar tu AFORE y tu saldo?</h3>
+                    <p class="article-description">Guía para verificar en qué administradora está tu cuenta de retiro y cuánto has ahorrado.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/afore-cambio.html" class="article-card variant-1" style="--card-index: 10;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-retiro-2.webp" alt="Proceso de cambio de AFORE: requisitos y pasos" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">Proceso de cambio de AFORE: requisitos y pasos</h3>
+                    <p class="article-description">Todo lo que necesitas saber para cambiar tu cuenta de AFORE a otra administradora.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            8 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/afore-retiro.html" class="article-card variant-3" style="--card-index: 11;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-retiro-3.webp" alt="Retiro parcial de AFORE: casos aplicables" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">Retiro parcial de AFORE: casos aplicables</h3>
+                    <p class="article-description">Situaciones en las que puedes retirar parte de tus ahorros de tu cuenta de AFORE antes de jubilarte.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/acta-nacimiento.html" class="article-card variant-1" style="--card-index: 12;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-tramites-1.webp" alt="¿Cómo obtener una copia de tu acta de nacimiento en línea?" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">¿Cómo obtener una copia de tu acta de nacimiento en línea?</h3>
+                    <p class="article-description">Proceso para solicitar y descargar tu acta de nacimiento de forma digital.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/acta-correccion.html" class="article-card variant-2" style="--card-index: 13;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-acta-2.webp" alt="Corrección de errores en el acta de nacimiento" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Corrección de errores en el acta de nacimiento</h3>
+                    <p class="article-description">Procedimiento para rectificar datos incorrectos en tu acta de nacimiento.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/actas-extranjero.html" class="article-card variant-1" style="--card-index: 14;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-internacional-1.webp" alt="Obtención de actas de nacimiento para mexicanos en el extranjero" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Obtención de actas de nacimiento para mexicanos en el extranjero</h3>
+                    <p class="article-description">Guía para conseguir actas de nacimiento si vives fuera de México.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/codi-pagos.html" class="article-card variant-2" style="--card-index: 15;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-digital-1.webp" alt="CoDi: Sistema de pagos digitales en México" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">CoDi: Sistema de pagos digitales en México</h3>
+                    <p class="article-description">Todo sobre la plataforma de Cobro Digital del Banco de México y cómo utilizarla.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/spei-transferencias.html" class="article-card variant-1" style="--card-index: 16;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-digital-2.webp" alt="Transferencias SPEI: guía completa" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">Transferencias SPEI: guía completa</h3>
+                    <p class="article-description">Información sobre el Sistema de Pagos Electrónicos Interbancarios y cómo realizar transferencias.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            8 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/billeteras-digitales.html" class="article-card variant-1" style="--card-index: 17;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-digital-3.webp" alt="Billeteras digitales disponibles en México" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">Billeteras digitales disponibles en México</h3>
+                    <p class="article-description">Comparativa de las principales opciones de pago digital en el país.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/licencia-tramite.html" class="article-card variant-3" style="--card-index: 18;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vehiculos-licencia-4.webp" alt="Trámite de licencia de conducir en México" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🚗</span>
+                        <span class="category-name">Vehículos</span>
+                    </div>
+                    <h3 class="article-title">Trámite de licencia de conducir en México</h3>
+                    <p class="article-description">Requisitos y proceso para obtener tu licencia de conducir por primera vez.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/licencia-renovacion.html" class="article-card variant-2" style="--card-index: 19;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vehiculos-licencia-3.webp" alt="Renovación de licencia de conducir: documentos necesarios" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🚗</span>
+                        <span class="category-name">Vehículos</span>
+                    </div>
+                    <h3 class="article-title">Renovación de licencia de conducir: documentos necesarios</h3>
+                    <p class="article-description">Lo que necesitas para renovar tu licencia de conducir vencida o próxima a vencer.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/licencia-permanente.html" class="article-card variant-2" style="--card-index: 20;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vehiculos-licencia-2.webp" alt="Licencia permanente: requisitos y estados donde está disponible" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🚗</span>
+                        <span class="category-name">Vehículos</span>
+                    </div>
+                    <h3 class="article-title">Licencia permanente: requisitos y estados donde está disponible</h3>
+                    <p class="article-description">Estados de México donde puedes obtener una licencia de conducir permanente y sus requisitos.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/pasaporte-mexicano.html" class="article-card variant-1" style="--card-index: 21;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-archivo-2.webp" alt="Requisitos para tramitar el pasaporte mexicano" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Requisitos para tramitar el pasaporte mexicano</h3>
+                    <p class="article-description">Documentación necesaria y proceso para obtener tu pasaporte mexicano.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/pasaporte-cita.html" class="article-card variant-1" style="--card-index: 22;">
+                <div class="article-image">
+                    <img src="assets/img/articles/tramites-fila-1.webp" alt="¿Cómo agendar una cita para pasaporte?" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏛️</span>
+                        <span class="category-name">Trámites Oficiales</span>
+                    </div>
+                    <h3 class="article-title">¿Cómo agendar una cita para pasaporte?</h3>
+                    <p class="article-description">Guía paso a paso para programar tu cita en la Secretaría de Relaciones Exteriores.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/pasaporte-renovacion.html" class="article-card variant-3" style="--card-index: 23;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-tramites-4.webp" alt="Renovación de pasaporte mexicano anticipada" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Renovación de pasaporte mexicano anticipada</h3>
+                    <p class="article-description">Información sobre cómo renovar tu pasaporte antes de que venza.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/constancia-fiscal.html" class="article-card variant-2" style="--card-index: 24;">
+                <div class="article-image">
+                    <img src="assets/img/articles/impuestos-formulario-1.webp" alt="Constancia de situación fiscal: cómo obtenerla" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💰</span>
+                        <span class="category-name">Impuestos</span>
+                    </div>
+                    <h3 class="article-title">Constancia de situación fiscal: cómo obtenerla</h3>
+                    <p class="article-description">Proceso para descargar tu constancia de situación fiscal actualizada del SAT.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            3 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/regimen-fiscal.html" class="article-card variant-1" style="--card-index: 25;">
+                <div class="article-image">
+                    <img src="assets/img/articles/impuestos-calendario-1.webp" alt="Regímenes fiscales en México y sus obligaciones" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💰</span>
+                        <span class="category-name">Impuestos</span>
+                    </div>
+                    <h3 class="article-title">Regímenes fiscales en México y sus obligaciones</h3>
+                    <p class="article-description">Comparativa de los diferentes regímenes fiscales para contribuyentes.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/sat-citas.html" class="article-card variant-2" style="--card-index: 26;">
+                <div class="article-image">
+                    <img src="assets/img/articles/tramites-oficina-1.webp" alt="Sistema de citas del SAT: guía de uso" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏛️</span>
+                        <span class="category-name">Trámites Oficiales</span>
+                    </div>
+                    <h3 class="article-title">Sistema de citas del SAT: guía de uso</h3>
+                    <p class="article-description">Cómo agendar, modificar o cancelar citas en el Servicio de Administración Tributaria.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/visa-turista.html" class="article-card variant-3" style="--card-index: 27;">
+                <div class="article-image">
+                    <img src="assets/img/articles/viajes-playa-1.webp" alt="Visa de turista para Estados Unidos: proceso completo" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">✈️</span>
+                        <span class="category-name">Viajes</span>
+                    </div>
+                    <h3 class="article-title">Visa de turista para Estados Unidos: proceso completo</h3>
+                    <p class="article-description">Requisitos y pasos para solicitar la visa B1/B2 para visitar EE.UU.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            8 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/visa-entrevista.html" class="article-card variant-3" style="--card-index: 28;">
+                <div class="article-image">
+                    <img src="assets/img/articles/viajes-montana-1.webp" alt="Preparación para la entrevista de visa americana" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">✈️</span>
+                        <span class="category-name">Viajes</span>
+                    </div>
+                    <h3 class="article-title">Preparación para la entrevista de visa americana</h3>
+                    <p class="article-description">Consejos y recomendaciones para tu entrevista en el consulado estadounidense.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/visa-renovacion.html" class="article-card variant-1" style="--card-index: 29;">
+                <div class="article-image">
+                    <img src="assets/img/articles/viajes-hotel-1.webp" alt="Renovación de visa americana sin entrevista" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">✈️</span>
+                        <span class="category-name">Viajes</span>
+                    </div>
+                    <h3 class="article-title">Renovación de visa americana sin entrevista</h3>
+                    <p class="article-description">Casos en los que puedes renovar tu visa estadounidense sin acudir a una entrevista.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/becas-benito-juarez.html" class="article-card variant-3" style="--card-index: 30;">
+                <div class="article-image">
+                    <img src="assets/img/articles/educacion-aula-1.webp" alt="Becas Benito Juárez: beneficiarios y registro" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🎓</span>
+                        <span class="category-name">Educación</span>
+                    </div>
+                    <h3 class="article-title">Becas Benito Juárez: beneficiarios y registro</h3>
+                    <p class="article-description">Información sobre los programas de becas del gobierno federal para estudiantes.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/cedula-profesional.html" class="article-card variant-1" style="--card-index: 31;">
+                <div class="article-image">
+                    <img src="assets/img/articles/educacion-biblioteca-1.webp" alt="Trámite de cédula profesional electrónica" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🎓</span>
+                        <span class="category-name">Educación</span>
+                    </div>
+                    <h3 class="article-title">Trámite de cédula profesional electrónica</h3>
+                    <p class="article-description">Proceso para obtener tu cédula profesional de forma digital tras concluir tus estudios.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/certificado-estudios.html" class="article-card variant-1" style="--card-index: 32;">
+                <div class="article-image">
+                    <img src="assets/img/articles/educacion-computadora-1.webp" alt="Obtención de certificados de estudios en línea" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🎓</span>
+                        <span class="category-name">Educación</span>
+                    </div>
+                    <h3 class="article-title">Obtención de certificados de estudios en línea</h3>
+                    <p class="article-description">Cómo solicitar y descargar certificados de estudios oficiales por medios digitales.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/predial-pago.html" class="article-card variant-2" style="--card-index: 33;">
+                <div class="article-image">
+                    <img src="assets/img/articles/impuestos-calculadora-1.webp" alt="Pago de predial en línea: principales ciudades" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💰</span>
+                        <span class="category-name">Impuestos</span>
+                    </div>
+                    <h3 class="article-title">Pago de predial en línea: principales ciudades</h3>
+                    <p class="article-description">Guía para pagar tu impuesto predial por internet en las principales ciudades de México.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/predial-descuentos.html" class="article-card variant-2" style="--card-index: 34;">
+                <div class="article-image">
+                    <img src="assets/img/articles/impuestos-finanzas-1.webp" alt="Descuentos en el predial: quiénes aplican" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💰</span>
+                        <span class="category-name">Impuestos</span>
+                    </div>
+                    <h3 class="article-title">Descuentos en el predial: quiénes aplican</h3>
+                    <p class="article-description">Grupos que pueden obtener descuentos en el pago del impuesto predial y cómo solicitarlos.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/predial-adeudos.html" class="article-card variant-3" style="--card-index: 35;">
+                <div class="article-image">
+                    <img src="assets/img/articles/impuestos-formulario-2.webp" alt="Consulta de adeudos de predial" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💰</span>
+                        <span class="category-name">Impuestos</span>
+                    </div>
+                    <h3 class="article-title">Consulta de adeudos de predial</h3>
+                    <p class="article-description">Herramientas para verificar si tienes adeudos pendientes de impuesto predial.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            3 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/nacionalidad-mexicana.html" class="article-card variant-1" style="--card-index: 36;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-tramites-3.webp" alt="Cómo obtener la nacionalidad mexicana por naturalización" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Cómo obtener la nacionalidad mexicana por naturalización</h3>
+                    <p class="article-description">Requisitos y proceso para extranjeros que desean obtener la nacionalidad mexicana.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            8 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/apostilla-documentos.html" class="article-card variant-3" style="--card-index: 37;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-archivo-1.webp" alt="Apostilla de documentos mexicanos: guía completa" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Apostilla de documentos mexicanos: guía completa</h3>
+                    <p class="article-description">Proceso para legalizar documentos mexicanos para su uso en el extranjero.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/tenencia-vehicular.html" class="article-card variant-1" style="--card-index: 38;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vehiculos-coche-2.webp" alt="Tenencia vehicular: estados donde se cobra y exenciones" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🚗</span>
+                        <span class="category-name">Vehículos</span>
+                    </div>
+                    <h3 class="article-title">Tenencia vehicular: estados donde se cobra y exenciones</h3>
+                    <p class="article-description">Información sobre el impuesto de tenencia vehicular en diferentes estados de México.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/actualizacion-domicilio.html" class="article-card variant-1" style="--card-index: 39;">
+                <div class="article-image">
+                    <img src="assets/img/articles/tramites-documento-1.webp" alt="Actualización de domicilio: trámites en línea" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏛️</span>
+                        <span class="category-name">Trámites Oficiales</span>
+                    </div>
+                    <h3 class="article-title">Actualización de domicilio: trámites en línea</h3>
+                    <p class="article-description">Cómo actualizar tu domicilio en instituciones gubernamentales y servicios importantes.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/certificado-antecedentes.html" class="article-card variant-3" style="--card-index: 40;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-contrato-1.webp" alt="Certificado de antecedentes no penales" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Certificado de antecedentes no penales</h3>
+                    <p class="article-description">Guía para obtener tu certificado de antecedentes no penales federal o estatal.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/constancia-antecedentes.html" class="article-card variant-2" style="--card-index: 41;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-oficina-1.webp" alt="Constancia de antecedentes no penales: guía" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Constancia de antecedentes no penales: guía</h3>
+                    <p class="article-description">Todo lo que necesitas saber para solicitar tu constancia de antecedentes no penales.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/credencial-ine.html" class="article-card variant-3" style="--card-index: 42;">
+                <div class="article-image">
+                    <img src="assets/img/articles/documentos-oficina-2.webp" alt="Credencial para votar (INE): trámites relacionados" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">Documentos Personales</span>
+                    </div>
+                    <h3 class="article-title">Credencial para votar (INE): trámites relacionados</h3>
+                    <p class="article-description">Información sobre la credencial del INE y todos sus trámites asociados.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/homologacion-estudios.html" class="article-card variant-3" style="--card-index: 43;">
+                <div class="article-image">
+                    <img src="assets/img/articles/educacion-aula-2.webp" alt="Homologación de estudios extranjeros en México" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🎓</span>
+                        <span class="category-name">Educación</span>
+                    </div>
+                    <h3 class="article-title">Homologación de estudios extranjeros en México</h3>
+                    <p class="article-description">Proceso para reconocer estudios realizados en el extranjero en el sistema educativo mexicano.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            8 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/imss-seguro-social.html" class="article-card variant-1" style="--card-index: 44;">
+                <div class="article-image">
+                    <img src="assets/img/articles/salud-hospital-1.webp" alt="IMSS: trámites y servicios del Seguro Social" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏛️</span>
+                        <span class="category-name">Trámites Oficiales</span>
+                    </div>
+                    <h3 class="article-title">IMSS: trámites y servicios del Seguro Social</h3>
+                    <p class="article-description">Guía completa de los principales servicios y trámites ofrecidos por el IMSS.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/infonavit-estado-cuenta.html" class="article-card variant-1" style="--card-index: 45;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vivienda-casa-1.webp" alt="Estado de cuenta del INFONAVIT" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🏛️</span>
+                        <span class="category-name">Trámites Oficiales</span>
+                    </div>
+                    <h3 class="article-title">Estado de cuenta del INFONAVIT</h3>
+                    <p class="article-description">Cómo consultar y comprender tu estado de cuenta del INFONAVIT.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/licencia-cdmx.html" class="article-card variant-2" style="--card-index: 46;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vehiculos-licencia-1.webp" alt="Licencia de conducir CDMX: requisitos y trámites" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🚗</span>
+                        <span class="category-name">Vehículos</span>
+                    </div>
+                    <h3 class="article-title">Licencia de conducir CDMX: requisitos y trámites</h3>
+                    <p class="article-description">Todo lo que necesitas saber para tramitar o renovar tu licencia en la Ciudad de México.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/permiso-conducir-internacional.html" class="article-card variant-3" style="--card-index: 47;">
+                <div class="article-image">
+                    <img src="assets/img/articles/viajes-carretera-1.webp" alt="Permiso internacional de conducir" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">✈️</span>
+                        <span class="category-name">Viajes</span>
+                    </div>
+                    <h3 class="article-title">Permiso internacional de conducir</h3>
+                    <p class="article-description">Información sobre cómo obtener un permiso para conducir en el extranjero.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            5 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/predial-consulta.html" class="article-card variant-2" style="--card-index: 48;">
+                <div class="article-image">
+                    <img src="assets/img/articles/impuestos-documento-1.webp" alt="Consulta de predial en línea" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💰</span>
+                        <span class="category-name">Impuestos</span>
+                    </div>
+                    <h3 class="article-title">Consulta de predial en línea</h3>
+                    <p class="article-description">Herramientas y métodos para verificar información sobre tu impuesto predial.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            3 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/prestamos-personales.html" class="article-card variant-1" style="--card-index: 49;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-dinero-1.webp" alt="Préstamos personales: opciones y requisitos" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">Préstamos personales: opciones y requisitos</h3>
+                    <p class="article-description">Comparativa de las distintas opciones de préstamos personales disponibles en México.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            6 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/puntos-infracciones.html" class="article-card variant-1" style="--card-index: 50;">
+                <div class="article-image">
+                    <img src="assets/img/articles/vehiculos-multa-2.webp" alt="Consulta de puntos e infracciones" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">🚗</span>
+                        <span class="category-name">Vehículos</span>
+                    </div>
+                    <h3 class="article-title">Consulta de puntos e infracciones</h3>
+                    <p class="article-description">Cómo verificar los puntos e infracciones asociados a tu licencia de conducir.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            4 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a><a href="pages/reclamaciones-bancarias.html" class="article-card variant-2" style="--card-index: 51;">
+                <div class="article-image">
+                    <img src="assets/img/articles/finanzas-banco-1.webp" alt="Reclamaciones bancarias: proceso y derechos" loading="lazy">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="article-content">
+                    <div class="article-category">
+                        <span class="category-icon">💳</span>
+                        <span class="category-name">Finanzas</span>
+                    </div>
+                    <h3 class="article-title">Reclamaciones bancarias: proceso y derechos</h3>
+                    <p class="article-description">Guía para presentar reclamaciones ante instituciones financieras y conocer tus derechos.</p>
+                    <div class="article-footer">
+                        <span class="reading-time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            7 min
+                        </span>
+                        <span class="read-more">Leer más <span class="arrow">→</span></span>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </a>
         </div>
     </section>
     
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -414,13 +1645,12 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 Tramita.co - Todos los derechos reservados</p>
+                <p>© 2025 Tramita.co - Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
     
-    <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner" id="cookieBanner" style="display: none;">
         <div class="cookie-text">
             <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
             <div class="cookie-links">
@@ -432,7 +1662,9 @@
         <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
     </div>
     
-    <!-- JavaScript -->
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/main.js" defer=""></script>
+    <script src="assets/js/search.js" defer=""></script>
+
+
 </body>
 </html>

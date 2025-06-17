@@ -6,10 +6,8 @@
     <meta name="description" content="Política de cookies de Tramita.co. Información detallada sobre el uso de cookies en nuestro sitio web.">
     <title>Política de Cookies | Tramita.co</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     
-    <!-- Critical CSS Inline -->
     <style>
         :root {
             --dark-plum: #4B1D3F;
@@ -31,6 +29,7 @@
             color: #fff;
             font-family: "Manrope", sans-serif;
             line-height: 1.6;
+            overflow-x: hidden;
         }
         
         a {
@@ -65,14 +64,311 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            font-family: "Chivo Mono", monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, var(--red-accent), var(--yellow-accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: "Unbounded", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FFF, var(--lilac-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--beige-gray);
+        }
+        
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(201, 164, 222, 0.3);
+        }
+        
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--lilac-purple);
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 1rem 0 4rem;
+        }
+        
+        .article-card {
+            background: linear-gradient(135deg, rgba(75, 29, 63, 0.8) 0%, rgba(140, 94, 69, 0.8) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+        
+        .article-description {
+            font-size: 0.9rem;
+            color: var(--beige-gray);
+            line-height: 1.5;
+        }
+        
+        footer {
+            background: linear-gradient(to right, rgba(75, 29, 63, 0.9), rgba(140, 94, 69, 0.9));
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: "Unbounded", sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links h4 {
+            font-family: "Chivo Mono", monospace;
+            margin-bottom: 1rem;
+            color: var(--yellow-accent);
+        }
+        
+        .footer-links a {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lilac-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: var(--beige-gray);
+        }
+        
+        .cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
+            padding: 1.5rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 200px;
+            color: #333;
+        }
+        
+        .cookie-text p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-links a {
+            margin-right: 1rem;
+            text-decoration: underline;
+            color: var(--dark-plum);
+            font-weight: 500;
+        }
+        
+        .cookie-btn {
+            background-color: var(--dark-plum);
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-btn:hover {
+            background-color: #6d2b5b;
+        }
+        
+        @media (max-width: 992px) {
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 80%;
+                max-width: 300px;
+                background: linear-gradient(135deg, var(--dark-plum), rgba(75, 29, 63, 0.95));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin-left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 101;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .cookie-text {
+                min-width: 100%;
+            }
+        }
     </style>
     
-    <!-- Non-critical CSS with defer loading -->
     <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
@@ -89,14 +385,12 @@
         </div>
     </header>
     
-    <!-- Legal Header -->
     <section class="article-header">
         <div class="container">
             <h1>Política de Cookies</h1>
         </div>
     </section>
     
-    <!-- Legal Content -->
     <div class="container">
         <div class="legal-content">
             <section>
@@ -159,7 +453,6 @@
         </div>
     </div>
     
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -189,7 +482,6 @@
         </div>
     </footer>
     
-    <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookieBanner">
         <div class="cookie-text">
             <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
@@ -202,7 +494,7 @@
         <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
     </div>
     
-    <!-- JavaScript -->
     <script src="../assets/js/main.js" defer></script>
+
 </body>
 </html>
