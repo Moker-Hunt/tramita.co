@@ -60,19 +60,6 @@ body {
     flex-direction: column;
 }
 
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, 
-        rgba(0, 0, 0, 0.1) 0%, 
-        rgba(75, 29, 63, 0.8) 100%);
-    z-index: 1;
-}
-
 .article-card.variant-1 .article-content {
     background: linear-gradient(135deg, rgba(75, 29, 63, 0.97) 0%, rgba(140, 94, 69, 0.97) 100%);
 }
