@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="../assets/css/styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
+    <link rel="stylesheet" href="../assets/css/cookie-styles.css">
 
     <style>
         :root {
@@ -323,57 +324,7 @@
             font-size: 0.8rem;
             color: var(--beige-gray);
         }
-        .cookie-banner {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--yellow-accent), var(--red-accent));
-            padding: 1.5rem;
-            border-radius: 12px;
-            width: 90%;
-            max-width: 900px;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-        }
         
-        .cookie-text {
-            flex: 1;
-            min-width: 200px;
-            color: #333;
-        }
-        
-        .cookie-text p {
-            margin-bottom: 0.5rem;
-        }
-        
-        .cookie-links a {
-            margin-right: 1rem;
-            text-decoration: underline;
-            color: var(--dark-plum);
-            font-weight: 500;
-        }
-        
-        .cookie-btn {
-            background-color: var(--dark-plum);
-            color: #fff;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            cursor: pointer;
-            font-family: "Manrope", sans-serif;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .cookie-btn:hover {
-            background-color: #6d2b5b;
-        }
         
         @media (max-width: 768px) {
             .nav-links {
@@ -410,20 +361,6 @@
         @media (max-width: 576px) {            
             .footer-content {
                 flex-direction: column;
-            }
-            
-            .cookie-banner {
-                flex-direction: column;
-                text-align: center;
-                bottom: 0;
-                left: 0;
-                transform: none;
-                width: 100%;
-                border-radius: 12px 12px 0 0;
-            }
-            
-            .cookie-text {
-                min-width: 100%;
             }
         }
 
@@ -707,16 +644,22 @@
             </div>
         </div>
     </footer>
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-text">
-            <p><strong>Este sitio utiliza cookies</strong> para mejorar su experiencia de navegación.</p>
-            <div class="cookie-links">
-                <a href="../legal/privacy-policy.html">Política de Privacidad</a>
-                <a href="../legal/terms-of-use.html">Términos de Uso</a>
-                <a href="../legal/privacy-policy-cookies.html">Política de Cookies</a>
+    
+    <div id="cookie-consent" class="cookie-consent">
+        <div class="cookie-container">
+            <div class="cookie-content">
+                <h3>Uso de Cookies</h3>
+                <p>Este sitio utiliza cookies para mejorar su experiencia de navegación y ofrecerle servicios más personalizados.</p>
+                <div class="cookie-links">
+                    <a href="legal/privacy-policy.html">Política de Privacidad</a>
+                    <a href="legal/terms-of-use.html">Términos de Uso</a>
+                    <a href="legal/privacy-policy-cookies.html">Política de Cookies</a>
+                </div>
+                <div class="cookie-buttons">
+                    <button id="cookie-accept" class="cookie-accept-btn">Aceptar y continuar</button>
+                </div>
             </div>
         </div>
-        <button class="cookie-btn" id="acceptCookie">Aceptar y continuar</button>
     </div>
 
 <div class="article-summary">
@@ -724,5 +667,6 @@
     <p>Información completa sobre qué es el CURP, cómo obtenerlo y cómo consultarlo en línea desde cualquier dispositivo.</p>
 </div>
     <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/cookie-consent.js" defer></script>
 </body>
 </html>
