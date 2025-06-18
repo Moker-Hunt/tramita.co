@@ -1,0 +1,125 @@
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    display: none;
+}
+
+.cookie-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cookie-content {
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cookie-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #FDD85D;
+    font-size: 1.2rem;
+}
+
+.cookie-content p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.cookie-links {
+    margin-bottom: 15px;
+}
+
+.cookie-links a {
+    color: #FDD85D;
+    margin: 0 8px;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.cookie-links a:hover {
+    color: #fff;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-accept-btn {
+    background-color: #FDD85D;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.cookie-accept-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    .cookie-container {
+        padding: 15px;
+    }
+    
+    .cookie-content {
+        padding: 10px;
+    }
+    
+    .cookie-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .cookie-content p {
+        font-size: 0.85rem;
+    }
+    
+    .cookie-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .cookie-links a {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-container {
+        padding: 10px;
+    }
+    
+    .cookie-content h3 {
+        font-size: 1rem;
+    }
+    
+    .cookie-content p {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .cookie-accept-btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
